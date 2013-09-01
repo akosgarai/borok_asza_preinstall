@@ -13,6 +13,7 @@
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
+<link rel="stylesheet" type="text/css" href="view/stylesheet/aszok_bora_admin_style.css" />
 <link rel="stylesheet" type="text/css" href="view/stylesheet/stylesheet.css" />
 <?php foreach ($styles as $style) { ?>
 <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
@@ -62,54 +63,54 @@ $(document).ready(function(){
   <?php if ($logged) { ?>
   <div id="menu">
     <ul class="left" style="display: none;">
-      <li id="dashboard"><a href="<?php echo $home; ?>" class="top"><?php echo $text_dashboard; ?></a></li>
+      <li id="dashboard" class="unused_shit"><a href="<?php echo $home; ?>" class="top"><?php echo $text_dashboard; ?></a></li>
       <li id="catalog"><a class="top"><?php echo $text_catalog; ?></a>
         <ul>
           <li><a href="<?php echo $category; ?>"><?php echo $text_category; ?></a></li>
           <li><a href="<?php echo $product; ?>"><?php echo $text_product; ?></a></li>
-          <li><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
-          <li><a href="<?php echo $profile; ?>"><?php echo $text_profile; ?></a></li>
-          <li><a class="parent"><?php echo $text_attribute; ?></a>
+          <li class="unused_shit"><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $profile; ?>"><?php echo $text_profile; ?></a></li>
+          <li class="unused_shit"><a class="parent"><?php echo $text_attribute; ?></a>
             <ul>
-              <li><a href="<?php echo $attribute; ?>"><?php echo $text_attribute; ?></a></li>
-              <li><a href="<?php echo $attribute_group; ?>"><?php echo $text_attribute_group; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $attribute; ?>"><?php echo $text_attribute; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $attribute_group; ?>"><?php echo $text_attribute_group; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
           <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-          <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
-          <li><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
-          <li><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
         </ul>
       </li>
-      <li id="extension"><a class="top"><?php echo $text_extension; ?></a>
+      <li id="extension" style="background-color:red"><a class="top"><?php echo $text_extension; ?></a>
         <ul>
-          <li><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
-          <li><a href="<?php echo $shipping; ?>"><?php echo $text_shipping; ?></a></li>
-          <li><a href="<?php echo $payment; ?>"><?php echo $text_payment; ?></a></li>
-          <li><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
-          <li><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
-            <li><a class="parent"><?php echo $text_openbay_extension; ?></a>
+          <li class="unused_shit"><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $shipping; ?>"><?php echo $text_shipping; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $payment; ?>"><?php echo $text_payment; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $total; ?>"><?php echo $text_total; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $feed; ?>"><?php echo $text_feed; ?></a></li>
+            <li class="unused_shit"><a class="parent"><?php echo $text_openbay_extension; ?></a>
                 <ul>
-                    <li><a href="<?php echo $openbay_link_extension; ?>"><?php echo $text_openbay_dashboard; ?></a></li>
-                    <li><a href="<?php echo $openbay_link_orders; ?>"><?php echo $text_openbay_orders; ?></a></li>
-                    <li><a href="<?php echo $openbay_link_items; ?>"><?php echo $text_openbay_items; ?></a></li>
+                    <li class="unused_shit"><a href="<?php echo $openbay_link_extension; ?>"><?php echo $text_openbay_dashboard; ?></a></li>
+                    <li class="unused_shit"><a href="<?php echo $openbay_link_orders; ?>"><?php echo $text_openbay_orders; ?></a></li>
+                    <li class="unused_shit"><a href="<?php echo $openbay_link_items; ?>"><?php echo $text_openbay_items; ?></a></li>
 
                     <?php if($openbay_markets['ebay'] == 1){ ?>
-                    <li><a class="parent" href="<?php echo $openbay_link_ebay; ?>"><?php echo $text_openbay_ebay; ?></a>
+                    <li class="unused_shit"><a class="parent" href="<?php echo $openbay_link_ebay; ?>"><?php echo $text_openbay_ebay; ?></a>
                         <ul>
-                            <li><a href="<?php echo $openbay_link_ebay_settings; ?>"><?php echo $text_openbay_settings; ?></a></li>
-                            <li><a href="<?php echo $openbay_link_ebay_links; ?>"><?php echo $text_openbay_links; ?></a></li>
-                            <li><a href="<?php echo $openbay_link_ebay_orderimport; ?>"><?php echo $text_openbay_order_import; ?></a></li>
+                            <li class="unused_shit"><a href="<?php echo $openbay_link_ebay_settings; ?>"><?php echo $text_openbay_settings; ?></a></li>
+                            <li class="unused_shit"><a href="<?php echo $openbay_link_ebay_links; ?>"><?php echo $text_openbay_links; ?></a></li>
+                            <li class="unused_shit"><a href="<?php echo $openbay_link_ebay_orderimport; ?>"><?php echo $text_openbay_order_import; ?></a></li>
                        </ul>
                     </li>
                     <?php } ?>
 
                     <?php if($openbay_markets['amazon'] == 1){ ?>
-                    <li><a class="parent" href="<?php echo $openbay_link_amazon; ?>"><?php echo $text_openbay_amazon; ?></a>
+                    <li class="unused_shit"><a class="parent" href="<?php echo $openbay_link_amazon; ?>"><?php echo $text_openbay_amazon; ?></a>
                         <ul>
-                            <li><a href="<?php echo $openbay_link_amazon_settings; ?>"><?php echo $text_openbay_settings; ?></a></li>
-                            <li><a href="<?php echo $openbay_link_amazon_links; ?>"><?php echo $text_openbay_links; ?></a></li>
+                            <li class="unused_shit"><a href="<?php echo $openbay_link_amazon_settings; ?>"><?php echo $text_openbay_settings; ?></a></li>
+                            <li class="unused_shit"><a href="<?php echo $openbay_link_amazon_links; ?>"><?php echo $text_openbay_links; ?></a></li>
                         </ul>
                     </li>
                     <?php } ?>
@@ -135,51 +136,51 @@ $(document).ready(function(){
             </li>
         </ul>
       </li>
-      <li id="sale"><a class="top"><?php echo $text_sale; ?></a>
+      <li id="sale" style="background-color:red"><a class="top"><?php echo $text_sale; ?></a>
         <ul>
-          <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-          <li><a href="<?php echo $recurring_profile; ?>"><?php echo $text_recurring_profile; ?></a></li>
-          <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
-          <li><a class="parent"><?php echo $text_customer; ?></a>
+          <li class="unused_shit"><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $recurring_profile; ?>"><?php echo $text_recurring_profile; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+          <li class="unused_shit"><a class="parent"><?php echo $text_customer; ?></a>
             <ul>
-              <li><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>
-              <li><a href="<?php echo $customer_group; ?>"><?php echo $text_customer_group; ?></a></li>
-              <li><a href="<?php echo $customer_ban_ip; ?>"><?php echo $text_customer_ban_ip; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $customer; ?>"><?php echo $text_customer; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $customer_group; ?>"><?php echo $text_customer_group; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $customer_ban_ip; ?>"><?php echo $text_customer_ban_ip; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-          <li><a href="<?php echo $coupon; ?>"><?php echo $text_coupon; ?></a></li>
-          <li><a class="parent"><?php echo $text_voucher; ?></a>
+          <li class="unused_shit"><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $coupon; ?>"><?php echo $text_coupon; ?></a></li>
+          <li class="unused_shit"><a class="parent"><?php echo $text_voucher; ?></a>
             <ul>
-              <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-              <li><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $voucher_theme; ?>"><?php echo $text_voucher_theme; ?></a></li>
             </ul>
           </li>
           <!-- PAYPAL MANAGE NAVIGATION LINK -->
           <?php if ($pp_express_status) { ?>
-           <li><a class="parent" href="<?php echo $paypal_express; ?>"><?php echo $text_paypal_express; ?></a>
+           <li class="unused_shit"><a class="parent" href="<?php echo $paypal_express; ?>"><?php echo $text_paypal_express; ?></a>
              <ul>
-               <li><a href="<?php echo $paypal_express_search; ?>"><?php echo $text_paypal_express_search; ?></a></li>
+               <li class="unused_shit"><a href="<?php echo $paypal_express_search; ?>"><?php echo $text_paypal_express_search; ?></a></li>
              </ul>
-           </li>
+           </li class="unused_shit">
           <?php } ?>
           <!-- PAYPAL MANAGE NAVIGATION LINK END -->
-          <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
         </ul>
       </li>
       <li id="system"><a class="top"><?php echo $text_system; ?></a>
         <ul>
           <li><a href="<?php echo $setting; ?>"><?php echo $text_setting; ?></a></li>
-          <li><a class="parent"><?php echo $text_design; ?></a>
+          <li class="unused_shit"><a class="parent"><?php echo $text_design; ?></a>
             <ul>
-              <li><a href="<?php echo $layout; ?>"><?php echo $text_layout; ?></a></li>
-              <li><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $layout; ?>"><?php echo $text_layout; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $banner; ?>"><?php echo $text_banner; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_users; ?></a>
+          <li class="unused_shit"><a class="parent"><?php echo $text_users; ?></a>
             <ul>
-              <li><a href="<?php echo $user; ?>"><?php echo $text_user; ?></a></li>
-              <li><a href="<?php echo $user_group; ?>"><?php echo $text_user_group; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $user; ?>"><?php echo $text_user; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $user_group; ?>"><?php echo $text_user_group; ?></a></li>
             </ul>
           </li>
           <li><a class="parent"><?php echo $text_localisation; ?></a>
@@ -214,41 +215,41 @@ $(document).ready(function(){
       </li>
       <li id="reports"><a class="top"><?php echo $text_reports; ?></a>
         <ul>
-          <li><a class="parent"><?php echo $text_sale; ?></a>
+          <li class="unused_shit"><a class="parent"><?php echo $text_sale; ?></a>
             <ul>
-              <li><a href="<?php echo $report_sale_order; ?>"><?php echo $text_report_sale_order; ?></a></li>
-              <li><a href="<?php echo $report_sale_tax; ?>"><?php echo $text_report_sale_tax; ?></a></li>
-              <li><a href="<?php echo $report_sale_shipping; ?>"><?php echo $text_report_sale_shipping; ?></a></li>
-              <li><a href="<?php echo $report_sale_return; ?>"><?php echo $text_report_sale_return; ?></a></li>
-              <li><a href="<?php echo $report_sale_coupon; ?>"><?php echo $text_report_sale_coupon; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_sale_order; ?>"><?php echo $text_report_sale_order; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_sale_tax; ?>"><?php echo $text_report_sale_tax; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_sale_shipping; ?>"><?php echo $text_report_sale_shipping; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_sale_return; ?>"><?php echo $text_report_sale_return; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_sale_coupon; ?>"><?php echo $text_report_sale_coupon; ?></a></li>
             </ul>
           </li>
           <li><a class="parent"><?php echo $text_product; ?></a>
             <ul>
               <li><a href="<?php echo $report_product_viewed; ?>"><?php echo $text_report_product_viewed; ?></a></li>
-              <li><a href="<?php echo $report_product_purchased; ?>"><?php echo $text_report_product_purchased; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_product_purchased; ?>"><?php echo $text_report_product_purchased; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_customer; ?></a>
+          <li class="unused_shit"><a class="parent"><?php echo $text_customer; ?></a>
             <ul>
-              <li><a href="<?php echo $report_customer_online; ?>"><?php echo $text_report_customer_online; ?></a></li>
-              <li><a href="<?php echo $report_customer_order; ?>"><?php echo $text_report_customer_order; ?></a></li>
-              <li><a href="<?php echo $report_customer_reward; ?>"><?php echo $text_report_customer_reward; ?></a></li>
-              <li><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_customer_online; ?>"><?php echo $text_report_customer_online; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_customer_order; ?>"><?php echo $text_report_customer_order; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_customer_reward; ?>"><?php echo $text_report_customer_reward; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
             </ul>
           </li>
-          <li><a class="parent"><?php echo $text_affiliate; ?></a>
+          <li class="unused_shit"><a class="parent"><?php echo $text_affiliate; ?></a>
             <ul>
-              <li><a href="<?php echo $report_affiliate_commission; ?>"><?php echo $text_report_affiliate_commission; ?></a></li>
+              <li class="unused_shit"><a href="<?php echo $report_affiliate_commission; ?>"><?php echo $text_report_affiliate_commission; ?></a></li>
             </ul>
           </li>
         </ul>
       </li>
-      <li id="help"><a class="top"><?php echo $text_help; ?></a>
+      <li id="help" style="background-color:red"><a class="top"><?php echo $text_help; ?></a>
         <ul>
-          <li><a href="http://www.opencart.com" target="_blank"><?php echo $text_opencart; ?></a></li>
-          <li><a href="http://www.opencart.com/index.php?route=documentation/introduction" target="_blank"><?php echo $text_documentation; ?></a></li>
-          <li><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
+          <li class="unused_shit"><a href="http://www.opencart.com" target="_blank"><?php echo $text_opencart; ?></a></li>
+          <li class="unused_shit"><a href="http://www.opencart.com/index.php?route=documentation/introduction" target="_blank"><?php echo $text_documentation; ?></a></li>
+          <li class="unused_shit"><a href="http://forum.opencart.com" target="_blank"><?php echo $text_support; ?></a></li>
         </ul>
       </li>
     </ul>
