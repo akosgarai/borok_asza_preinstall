@@ -25,9 +25,12 @@
   <?php } ?>
   <div class="box">
     <div class="heading">
+    <!--dont need
       <h1><img src="view/image/home.png" alt="" /> <?php echo $heading_title; ?></h1>
+    -->
     </div>
     <div class="content">
+      <!--dont need
       <div class="overview">
         <div class="dashboard-heading"><?php echo $text_overview; ?></div>
         <div class="dashboard-content">
@@ -36,6 +39,7 @@
               <td><?php echo $text_total_sale; ?></td>
               <td><?php echo $total_sale; ?></td>
             </tr>
+    </div> 
             <tr>
               <td><?php echo $text_total_sale_year; ?></td>
               <td><?php echo $total_sale_year; ?></td>
@@ -67,6 +71,8 @@
           </table>
         </div>
       </div>
+      -->
+      <!--dont need
       <div class="statistic">
         <div class="range"><?php echo $entry_range; ?>
           <select id="range" onchange="getSalesChart(this.value)">
@@ -81,6 +87,8 @@
           <div id="report" style="width: 390px; height: 170px; margin: auto;"></div>
         </div>
       </div>
+      -->
+      <!-- dont need
       <div class="latest">
         <div class="dashboard-heading"><?php echo $text_latest_10_orders; ?></div>
         <div class="dashboard-content">
@@ -118,6 +126,7 @@
           </table>
         </div>
       </div>
+      -->
     </div>
   </div>
 </div>
