@@ -41,7 +41,7 @@ label {
 #header .div1 {
 	height: 56px;
 	padding: 0px 30px;
-	background: url('../image/header.png') repeat-x;
+/*	background: url('../image/header.png') repeat-x; */
 	min-width: 900px;
 }
 #header .div2 {
@@ -49,10 +49,18 @@ label {
 	padding: 18px 0px 0px 0px;
 	float: left;
 }
+
+#header .div2_admin_text {
+	float: left;
+	padding: 80px 0px 0px 0px;
+	font-size: 26px;
+	color: #000000
+}
+
 #header .div3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #FFF;
+	color: #000000;
 	text-align: right;
 	padding: 15px 0px 0px 0px;
 	float: right;
