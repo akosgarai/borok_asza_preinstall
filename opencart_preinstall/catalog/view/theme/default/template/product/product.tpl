@@ -27,8 +27,8 @@
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
         <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
-        <?php if ($reward) { ?>
-        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
+       <!--	 <?php if ($reward) { ?>
+        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />-->
         <?php } ?>
         <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
       <?php if ($price) { ?>
@@ -36,27 +36,27 @@
         <?php if (!$special) { ?>
         <?php echo $price; ?>
         <?php } else { ?>
-        <span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
+       <!-- <span class="price-old"><?php echo $price; ?></span> <span class="price-new">--><?php echo $special; ?><!--</span>-->
         <?php } ?>
         <br />
         <?php if ($tax) { ?>
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
+       <!-- <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />-->
         <?php } ?>
         <?php if ($points) { ?>
-        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />
+       <!-- <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span><br />-->
         <?php } ?>
         <?php if ($discounts) { ?>
-        <br />
+      <!--  <br />
         <div class="discount">
           <?php foreach ($discounts as $discount) { ?>
           <?php echo sprintf($text_discount, $discount['quantity'], $discount['price']); ?><br />
           <?php } ?>
-        </div>
+        </div>-->
         <?php } ?>
       </div>
       <?php } ?>
       <?php if ($profiles): ?>
-      <div class="option">
+     <!-- <div class="option">
           <h2><span class="required">*</span><?php echo $text_payment_profile ?></h2>
           <br />
           <select name="profile_id">
@@ -70,10 +70,10 @@
           <span id="profile-description"></span>
           <br />
           <br />
-      </div>
+      </div>-->
       <?php endif; ?>
       <?php if ($options) { ?>
-      <div class="options">
+     <!-- <div class="options">
         <h2><?php echo $text_option; ?></h2>
         <br />
         <?php foreach ($options as $option) { ?>
@@ -216,9 +216,9 @@
         <br />
         <?php } ?>
         <?php } ?>
-      </div>
+      </div>-->
       <?php } ?>
-      <div class="cart">
+     <!-- <div class="cart">
         <div><?php echo $text_qty; ?>
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
@@ -231,7 +231,13 @@
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
         <?php } ?>
+      </div>-->
+      <div>
+       <div><h3><?php echo $tab_description; ?></h3></div>
+       <br />	
+      	<?php echo $description; ?>
       </div>
+
       <?php if ($review_status) { ?>
       <div class="review">
         <div><img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
@@ -244,7 +250,7 @@
       <?php } ?>
     </div>
   </div>
-  <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
+  <!--<div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
     <?php if ($attribute_groups) { ?>
     <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
     <?php } ?>
@@ -254,10 +260,10 @@
     <?php if ($products) { ?>
     <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
     <?php } ?>
-  </div>
-  <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
+  </div>-->
+ <!-- <div id="tab-description" class="tab-content"><?php echo $description; ?></div>-->
   <?php if ($attribute_groups) { ?>
-  <div id="tab-attribute" class="tab-content">
+  <!--<div id="tab-attribute" class="tab-content">
     <table class="attribute">
       <?php foreach ($attribute_groups as $attribute_group) { ?>
       <thead>
@@ -275,10 +281,10 @@
       </tbody>
       <?php } ?>
     </table>
-  </div>
+  </div>-->
   <?php } ?>
   <?php if ($review_status) { ?>
-  <div id="tab-review" class="tab-content">
+  <!--<div id="tab-review" class="tab-content">
     <div id="review"></div>
     <h2 id="review-title"><?php echo $text_write; ?></h2>
     <b><?php echo $entry_name; ?></b><br />
@@ -309,10 +315,10 @@
     <div class="buttons">
       <div class="right"><a id="button-review" class="button"><?php echo $button_continue; ?></a></div>
     </div>
-  </div>
+  </div>-->
   <?php } ?>
   <?php if ($products) { ?>
-  <div id="tab-related" class="tab-content">
+<!--  <div id="tab-related" class="tab-content">
     <div class="box-product">
       <?php foreach ($products as $product) { ?>
       <div>
@@ -335,7 +341,7 @@
         <a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
       <?php } ?>
     </div>
-  </div>
+  </div>-->
   <?php } ?>
   <?php if ($tags) { ?>
   <div class="tags"><b><?php echo $text_tags; ?></b>
