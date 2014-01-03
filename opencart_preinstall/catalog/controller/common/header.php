@@ -96,7 +96,7 @@ class ControllerCommonHeader extends Controller {
 		}
 		
 		// Menu
-		$this->load->model('catalog/category');
+		/*$this->load->model('catalog/category');
 		
 		$this->load->model('catalog/product');
 		
@@ -133,7 +133,7 @@ class ControllerCommonHeader extends Controller {
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);
 			}
-		}
+		}*/
 		
 		$this->children = array(
 			'module/language',

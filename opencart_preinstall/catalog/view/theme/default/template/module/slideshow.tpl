@@ -1,34 +1,15 @@
 <div class="about_us_container">
-	<div class="about_us_subject">
-		<h1>Aszok Bora / Borok Asza</h1>
-	</div>
 	<div class="about_us_content">
-		<p>If you haven't already located the OpenCart upload folder on the left side, you need to do so now and keep it open. In the Remote Site directory (right side), you need to open the folder that the OpenCart shop will be located in. The location of shop varies based on whether the you want the shop to be seen on the main page, a sub-folder, a subdomain, etc. If you want to make OpenCart the main page, you would need to upload files to the root folder of their website. </p>
-		<p>Be aware that some hosting services require public files to be upload to a public directory, such as public_html, if they are to be visible on the website. You should check with your hosting provider to see where you can upload public files.</p>
-		<p>Once the location of the OpenCart shop has been determined, all the content within the “upload” folder on the computer's (left) side of Filezilla must be selected, right-clicked, and uploaded. Uploading all the files might take a few minutes on the FTP client.</p>
-		<p>If you want the shop to be on the main page, for example www.shopnow.com, you must upload the contents of the “upload” folder, but not the “upload” folder itself. Including the “upload” folder will create a sub-folder, making the shop available only on www.shopnow.com/upload.</p>
-		<p>After Filezilla finishes uploading the files to the location specified, you should see the same files on both the left side(computer) and on the right side (the website); as seen in the screenshot below:</p>
+		<p>Magunkról honlap</p>
+		<p>Jócskán az ötvenes éveinkben járó házaspár vagyunk. Majdnem az összes barátunk és részben magunk is bejártuk az evolúció útját. Fiatalon rövidet, sört, majd félédes borokat ittunk. Mára már mindez letisztult, csak száraz bort iszunk.</p>
+		<p>Nem ragaszkodunk valamely tájegység boraihoz, fontos, hogy jó bor legyen, hogy szőlőből legyen. Férjem szokta mondani: „rövid az élet, ahhoz, hogy rossz bort igyunk.” Az országot járva tudatosan a „kis” pincészeteket kerestük fel, ahol fantasztikus borokat készítenek. Arra gondoltunk, hogy nyitunk egy kis üzletet és megkóstoltatjuk másokkal is a tájanként felkutatott borászok remek borait.</p> 
+		<p>A vállalkozásunkat reprezentáló logó megrajzolásakor is arra törekedtük, hogy a „borok ásza- ászok bora” érzékeltesse, hogy csak magyar borral foglalkozunk, hisz csodálatos, változatos ízeket, illatokat, élvezetet találhatunk a mi kis országunkban.</p> 
+		<p>Több féle kiszerelésben áruljuk a borainkat, üzletünkben 0.5 literes valamint 0.75 literes és 1.5 literes üvegben, valamint 2 literes PET palackban, 5 és 10 literes bag in box-ban. Valamennyi azonosan kiváló minőségű, édes, félédes száraz, fehér, rose és vörös bor, Egerből, Tokajból, Alföldről,Tolnából, Szekszárdról, Villányból, észak és dél Balatonról, Zalából, Pannonhalmáról, Sopronból.</p> 
+		<p>Az elején nem gondoltunk, hogy a gyümölcs boraink ilyen közkedveltek és keresettek lesznek. Most már 11 fajta gyümölcs bort is tartunk, sokak örömére. Üzletünket a saját házunk pincéjében alakítottuk ki és ez a költségtakarékos megoldás, visszatükröződik az árainkban is. Várjuk Önöket sok szeretettel</p>
+		<br />
+		<p>Edit, István</p>
 	</div>
+	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<g:plusone></g:plusone>
 </div>
-<!--
-<div class="slideshow">
-  <div id="slideshow<?php echo $module; ?>" class="nivoSlider" style="width: <?php echo $width; ?>px; height: <?php echo $height; ?>px;">
-    <?php foreach ($banners as $banner) { ?>
-    <?php if ($banner['link']) { ?>
-    <a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" /></a>
-    <?php } else { ?>
-    <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" />
-    <?php } ?>
-    <?php } ?>
-  </div>
-</div>
-<script type="text/javascript">
--->
-<!--
-$(document).ready(function() {
-	$('#slideshow<?php echo $module; ?>').nivoSlider();
-});
--->
-<!--
-</script>
--->

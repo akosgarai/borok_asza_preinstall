@@ -1,4 +1,5 @@
 .about_us_container {
+	padding-top: 300px;
 }
 
 .about_us_subject > h1 {
@@ -7,5 +8,121 @@
 }
 
 .about_us_content {
-	color:#123F1E;
+	color:#000000;
+	padding: 20px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#content {
+	background: url('../image/weboldadl_nyito_hasznos_980.png') no-repeat center top;
+	min-height: 768px;
+}
+
+/* menu */
+#menu {
+	margin-bottom: 15px;
+	padding: 15px 5px;
+}
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu > ul > li {
+	position: relative;
+	float: left;
+	z-index: 20;
+	padding: 6px 25px 25px 0px;
+}
+.menu_label {
+	font-weight: bold;
+	font-size: 14px;
+}
+.round_button {
+	//background: url('../image/button_white.png');
+	background-color: #eade92;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-khtml-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	border: 3px #123e1e solid;
+	vertical-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+}
+
+.round_button:hover {
+	background-color: #7d1a16;
+	border: 3px #eade92 solid;
+}
+
+.round_button_subcat > div {
+	padding: 5px;
+	display: none;
+	background: #FFFFFF;
+	position: absolute;
+	z-index: 5;
+	border: 1px solid #000000;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-khtml-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	background: url('../image/menu.png');
+}
+.round_button_url:hover > .round_button_subcat {
+	margin-top: 29px;
+	display: table;
+}
+.round_button_subcat > div > ul {
+	display: table-cell;
+}
+.round_button_subcat ul + ul {
+	padding-left: 20px;
+}
+.round_button_subcat ul > li > a {
+	text-decoration: none;
+	padding: 4px;
+	color: #FFFFFF;
+	display: block;
+	white-space: nowrap;
+	min-width: 120px;
+}
+.round_button_subcat ul > li > a:hover {
+	background: #000000;
+}
+.round_button_subcat > div > ul > li > a {
+	color: #FFFFFF;
+}
+//#menu > ul > li:hover > div {
+//	display: table;
+//}
+//#menu > ul > li > div > ul {
+//	display: table-cell;
+//}
+//#menu > ul > li ul + ul {
+//	padding-left: 20px;
+//}
+//#menu > ul > li ul > li > a {
+//	text-decoration: none;
+//	padding: 4px;
+//	color: #FFFFFF;
+//	display: block;
+//	white-space: nowrap;
+//	min-width: 120px;
+//}
+//#menu > ul > li ul > li > a:hover {
+//	background: #000000;
+//}
+//#menu > ul > li > div > ul > li > a {
+//	color: #FFFFFF;
+//}
+//#container {
+//	background: url('../image/weboldadl_nyito_hasznos_980.png');
+//	min-height: 768px;
+//}
+
+body {
+	background-color: #bac17e;
 }
