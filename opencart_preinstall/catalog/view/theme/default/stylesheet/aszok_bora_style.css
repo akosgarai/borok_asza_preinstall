@@ -46,7 +46,7 @@
 	-moz-border-radius: 15px 15px 15px 15px;
 	-khtml-border-radius: 15px 15px 15px 15px;
 	border-radius: 15px 15px 15px 15px;
-	border: 3px #123e1e solid;
+	border: 2px #123e1e solid;
 	vertical-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -55,7 +55,7 @@
 
 .round_button:hover {
 	background-color: #7d1a16;
-	border: 3px #eade92 solid;
+	border: 2px #eade92 solid;
 }
 
 .round_button_subcat > div {
@@ -95,34 +95,58 @@
 .round_button_subcat > div > ul > li > a {
 	color: #FFFFFF;
 }
-//#menu > ul > li:hover > div {
-//	display: table;
-//}
-//#menu > ul > li > div > ul {
-//	display: table-cell;
-//}
-//#menu > ul > li ul + ul {
-//	padding-left: 20px;
-//}
-//#menu > ul > li ul > li > a {
-//	text-decoration: none;
-//	padding: 4px;
-//	color: #FFFFFF;
-//	display: block;
-//	white-space: nowrap;
-//	min-width: 120px;
-//}
-//#menu > ul > li ul > li > a:hover {
-//	background: #000000;
-//}
-//#menu > ul > li > div > ul > li > a {
-//	color: #FFFFFF;
-//}
-//#container {
-//	background: url('../image/weboldadl_nyito_hasznos_980.png');
-//	min-height: 768px;
-//}
 
 body {
 	background-color: #bac17e;
+}
+
+.menu-bc-container {
+	margin-bottom: 300px;
+}
+
+.breadcrumb {
+	color: #CCCCCC;
+	margin-bottom: 10px;
+	padding-left: 30px;
+}
+
+#contact-box {
+	padding: 0 20px;
+}
+
+.address-box {
+	width: 25%;
+	float: left;
+}
+.map-box {
+	width: 73%;
+	float: left;
+}
+
+/* footer */ 
+#footer {
+	clear: both;
+	overflow: auto;
+	min-height: 100px;
+	padding: 20px;
+	border-top: 1px solid #DBDEE1;
+	border-bottom: 1px solid #DBDEE1;
+	background: #F8F8F8;
+}
+#footer ul {
+	margin-top: 55px;
+	padding-left: 160px;
+}
+#footer li {
+	float: left;
+	width: 33%;
+}
+.gplus-box {
+	text-align: right;
+	width: 50%;
+	float: left;
+}
+.facebook-box {
+	width: 50%;
+	float: left;
 }

@@ -4,7 +4,6 @@
     <?php foreach ($categories as $category) { ?>
 		<li>
 			<div style="padding-left: 10px;">
-				<label class="menu_label"><?php echo $category['name']; ?></label>
 				<a href="<?php echo $category['href']; ?>" class="round_button_url">
 					<div class="round_button" style="width:23px; height:23px;">
 					</div>
@@ -26,6 +25,7 @@
 						</div>
 					<?php } ?>
 				</div>-->
+				<label class="menu_label"><?php echo $category['name']; ?></label>
 			</div>
 		</li>
     <?php } ?>

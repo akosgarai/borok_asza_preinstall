@@ -1509,42 +1509,6 @@ ul.box-filter > li ul {
 	float: left;
 	width: 48%;
 }
-/* footer */ 
-#footer {
-	clear: both;
-	overflow: auto;
-	min-height: 100px;
-	padding: 20px;
-	border-top: 1px solid #DBDEE1;
-	border-bottom: 1px solid #DBDEE1;
-	background: #F8F8F8;
-}
-#footer h3 {
-	color: #000000;
-	font-size: 14px;
-	margin-top: 0px;
-	margin-bottom: 8px;
-}
-#footer .column {
-	float: left;
-	width: 25%;
-	min-height: 100px;
-}
-#footer .column ul {
-	margin-top: 0px;
-	margin-left: 8px;
-	padding-left: 12px;
-}
-#footer .column ul li {
-	margin-bottom: 3px;
-}
-#footer .column a {
-	text-decoration: none;
-	color: #000;
-}
-#footer .column a:hover {
-	text-decoration: underline;
-}
 #powered {
 	margin-top: 5px;
 	text-align: right;

@@ -9,7 +9,4 @@
 		<br />
 		<p>Edit, István</p>
 	</div>
-	<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
-	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-	<g:plusone></g:plusone>
 </div>
