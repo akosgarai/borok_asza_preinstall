@@ -1,5 +1,4 @@
 .about_us_container {
-	padding-top: 300px;
 }
 
 .about_us_subject > h1 {
@@ -15,19 +14,21 @@
 }
 
 #content {
-	background: url('../image/weboldadl_nyito_hasznos_980.png') no-repeat center top;
 	min-height: 768px;
+	border: #123f1e solid 4px;
+	background-color: white;
 }
 
 /* menu */
 #menu {
+	background: url('../image/header_test2.png') no-repeat center top;
 	margin-bottom: 15px;
-	padding: 15px 5px;
+	width: 980px;
+	height: 340px;
 }
 #menu ul {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	padding-top: 260px;
 }
 #menu > ul > li {
 	position: relative;
@@ -97,7 +98,7 @@
 }
 
 body {
-	background-color: #bac17e;
+	background-color: #eade92;
 }
 
 .menu-bc-container {

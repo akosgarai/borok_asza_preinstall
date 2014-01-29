@@ -85,6 +85,40 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
   <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a><a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></div>
   -->
 </div>
+<?php if ($categories) { ?>
+<div id="menu">
+	<ul>
+    <?php foreach ($categories as $category) { ?>
+		<li>
+			<div style="padding-left: 10px;">
+				<a href="<?php echo $category['href']; ?>" class="round_button_url">
+					<div class="round_button" style="width:23px; height:23px;">
+					</div>
+				</a>
+				<!--Alkategoriak a gombokhoz-->
+			<!--	<div class ="round_button_subcat">
+					<?php if ($category['children']) { ?>
+						<div>
+							<?php for ($i = 0; $i < count($category['children']);) { ?>
+							<ul>
+								<?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+								<?php for (; $i < $j; $i++) { ?>
+									<?php if (isset($category['children'][$i])) { ?>
+										<li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+									<?php } ?>
+								<?php } ?>
+							</ul>
+							<?php } ?>
+						</div>
+					<?php } ?>
+				</div>-->
+				<label class="menu_label"><?php echo $category['name']; ?></label>
+			</div>
+		</li>
+    <?php } ?>
+	</ul>
+</div>
+<?php } ?>
 <?php if ($error) { ?>
     
     <div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
