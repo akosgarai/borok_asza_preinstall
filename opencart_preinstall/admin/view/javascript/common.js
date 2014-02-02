@@ -65,3 +65,51 @@ $(document).ready(function() {
 		$(this).removeClass('hover');
 	});	
 });
+
+var keyCmd = {
+	'AAAAA': {
+		'func': function() {
+			$('.unused_shit').toggle();
+		}
+	}
+
+};
+
+document.onkeydown = function(e) {
+	var k;
+
+	if (window.event) {
+		k = window.event.keyCode;
+	}
+	else {
+		k = e.which;
+	}
+	for (var x in keyCmd) {
+		if (typeof(keyCmd[x].func) == 'undefined') {
+			if (typeof(keyCmd[x]) == 'function') {
+				keyCmd[x] = {'index': 0, 'func': keyCmd[0]};
+			}
+			else {
+				continue;
+			}
+		}
+		if (typeof(keyCmd[x].index) == 'undefined') {
+			keyCmd[x].index = 0;
+		}
+		if (x.charAt(keyCmd[x].index) == String.fromCharCode(k).toUpperCase()) {
+			keyCmd[x].index++;
+			if (keyCmd[x].index == x.length) {
+				for (y in keyCmd) {
+					if (typeof(keyCmd[x].index) != 'undefined') {
+						keyCmd[x].index = 0;
+					}
+				}
+				keyCmd[x].func();
+				break;
+			}
+		}
+		else {
+			keyCmd[x].index = 0;
+		}
+	}	
+}

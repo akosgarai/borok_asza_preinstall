@@ -67,7 +67,7 @@ $(document).ready(function(){
       <li id="dashboard" class="unused_shit"><a href="<?php echo $home; ?>" class="top"><?php echo $text_dashboard; ?></a></li>
       <li id="catalog"><a class="top"><?php echo $text_catalog; ?></a>
         <ul>
-          <li><a href="<?php echo $category; ?>"><?php echo $text_category; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $category; ?>"><?php echo $text_category; ?></a></li>
           <li><a href="<?php echo $product; ?>"><?php echo $text_product; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $filter; ?>"><?php echo $text_filter; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $profile; ?>"><?php echo $text_profile; ?></a></li>
@@ -84,7 +84,7 @@ $(document).ready(function(){
           <li class="unused_shit"><a href="<?php echo $information; ?>"><?php echo $text_information; ?></a></li>
         </ul>
       </li>
-      <li id="extension" style="background-color:red"><a class="top"><?php echo $text_extension; ?></a>
+      <li id="extension" class="unused_shit" style="background-color:red"><a class="top"><?php echo $text_extension; ?></a>
         <ul>
           <li class="unused_shit"><a href="<?php echo $module; ?>"><?php echo $text_module; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $shipping; ?>"><?php echo $text_shipping; ?></a></li>
@@ -137,7 +137,7 @@ $(document).ready(function(){
             </li>
         </ul>
       </li>
-      <li id="sale" style="background-color:red"><a class="top"><?php echo $text_sale; ?></a>
+      <li id="sale" class="unused_shit" style="background-color:red"><a class="top"><?php echo $text_sale; ?></a>
         <ul>
           <li class="unused_shit"><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $recurring_profile; ?>"><?php echo $text_recurring_profile; ?></a></li>
@@ -169,7 +169,7 @@ $(document).ready(function(){
           <li class="unused_shit"><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
         </ul>
       </li>
-      <li id="system"><a class="top"><?php echo $text_system; ?></a>
+      <li id="system" class="unused_shit"><a class="top"><?php echo $text_system; ?></a>
         <ul>
           <li><a href="<?php echo $setting; ?>"><?php echo $text_setting; ?></a></li>
           <li class="unused_shit"><a class="parent"><?php echo $text_design; ?></a>
@@ -210,11 +210,11 @@ $(document).ready(function(){
               <li><a href="<?php echo $weight_class; ?>"><?php echo $text_weight_class; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $error_log; ?>"><?php echo $text_error_log; ?></a></li>
-          <li><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $error_log; ?>"><?php echo $text_error_log; ?></a></li>
+          <li class="unused_shit"><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
         </ul>
       </li>
-      <li id="reports"><a class="top"><?php echo $text_reports; ?></a>
+      <li id="reports" class="unused_shit"><a class="top"><?php echo $text_reports; ?></a>
         <ul>
           <li class="unused_shit"><a class="parent"><?php echo $text_sale; ?></a>
             <ul>
@@ -246,7 +246,7 @@ $(document).ready(function(){
           </li>
         </ul>
       </li>
-      <li id="help" style="background-color:red"><a class="top"><?php echo $text_help; ?></a>
+      <li id="help" class="unused_shit" style="background-color:red"><a class="top"><?php echo $text_help; ?></a>
         <ul>
           <li class="unused_shit"><a href="http://www.opencart.com" target="_blank"><?php echo $text_opencart; ?></a></li>
           <li class="unused_shit"><a href="http://www.opencart.com/index.php?route=documentation/introduction" target="_blank"><?php echo $text_documentation; ?></a></li>
