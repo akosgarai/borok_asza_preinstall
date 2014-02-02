@@ -88,6 +88,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <?php if ($categories) { ?>
 <div id="menu">
 	<ul>
+		<li>
+			<div style="padding-left: 10px;">
+				<a href="" class="round_button_url">
+					<div class="round_button" style="width:23px; height:23px;">
+					</div>
+				</a>
+				<label class="menu_label">Fooldal</label>
+			</div>
+		</li>
     <?php foreach ($categories as $category) { ?>
 		<li>
 			<div style="padding-left: 10px;">
@@ -95,27 +104,19 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					<div class="round_button" style="width:23px; height:23px;">
 					</div>
 				</a>
-				<!--Alkategoriak a gombokhoz-->
-			<!--	<div class ="round_button_subcat">
-					<?php if ($category['children']) { ?>
-						<div>
-							<?php for ($i = 0; $i < count($category['children']);) { ?>
-							<ul>
-								<?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-								<?php for (; $i < $j; $i++) { ?>
-									<?php if (isset($category['children'][$i])) { ?>
-										<li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-									<?php } ?>
-								<?php } ?>
-							</ul>
-							<?php } ?>
-						</div>
-					<?php } ?>
-				</div>-->
 				<label class="menu_label"><?php echo $category['name']; ?></label>
 			</div>
 		</li>
     <?php } ?>
+		<li>
+			<div style="padding-left: 10px;">
+				<a href="index.php?route=information/contact" class="round_button_url">
+					<div class="round_button" style="width:23px; height:23px;">
+					</div>
+				</a>
+				<label class="menu_label">Kapcsolat</label>
+			</div>
+		</li>
 	</ul>
 </div>
 <?php } ?>

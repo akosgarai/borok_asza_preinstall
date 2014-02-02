@@ -16,7 +16,7 @@
 #content {
 	min-height: 768px;
 	border: #123f1e solid 4px;
-	background-color: white;
+	background-color: #eef0d1;
 }
 
 /* menu */
@@ -25,6 +25,7 @@
 	margin-bottom: 15px;
 	width: 980px;
 	height: 340px;
+	box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
 }
 #menu ul {
 	list-style: none;
