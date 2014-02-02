@@ -5,7 +5,7 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <?php echo $column_left; ?>
+  <?php //echo $column_left; ?>
   <h1><?php echo $heading_title; ?></h1>
   <?php if ($thumb || $description) { ?>
   <div class="category-info">
@@ -18,12 +18,17 @@
   </div>
   <?php } ?>
   <?php if ($categories) { ?>
-  <h2><?php echo $text_refine; ?></h2>
-  <div class="category-list">
+  <h2 class="hidden"><?php echo $text_refine; ?></h2>
+  <div class="category-list hidden">
     <?php if (count($categories) <= 5) { ?>
     <ul>
       <?php foreach ($categories as $category) { ?>
-      <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+      	<li>
+      		<a class="round_button_url" href="<?php echo $category['href']; ?>">
+			<div class="round_button" style="width:20px;height:20px"></div>
+			<label class="menu_label"><?php echo $category['name']; ?></label>
+		</a>
+	</li>
       <?php } ?>
     </ul>
     <?php } else { ?>
@@ -41,7 +46,7 @@
   </div>
   <?php } ?>
   <?php if ($products) { ?>
-  <div class="product-filter">
+  <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
     <div class="limit"><b><?php echo $text_limit; ?></b>
       <select onchange="location = this.value;">
@@ -66,7 +71,7 @@
       </select>
     </div>
   </div>
-  <div class="product-compare"><!--<a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a>--></div>
+  <div class="product-compare hidden"><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></div>
   <div class="product-list">
     <?php foreach ($products as $product) { ?>
     <div>

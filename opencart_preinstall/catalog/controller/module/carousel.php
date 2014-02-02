@@ -39,7 +39,7 @@ class ControllerModuleCarousel extends Controller {
 			$this->template = 'default/template/module/carousel.tpl';
 		}
 
-		$this->render(); 
+//		$this->render(); 
 	}
 }
 ?>

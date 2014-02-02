@@ -68,7 +68,7 @@ class ControllerModuleFeatured extends Controller {
 			$this->template = 'default/template/module/featured.tpl';
 		}
 
-		$this->render();
+		//$this->render();
 	}
 }
 ?>

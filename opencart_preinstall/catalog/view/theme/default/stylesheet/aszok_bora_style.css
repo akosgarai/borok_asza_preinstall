@@ -11,12 +11,12 @@
 	padding: 20px;
 	font-size: 14px;
 	font-weight: bold;
-}
-
-#content {
 	min-height: 768px;
 	border: #123f1e solid 4px;
 	background-color: #eef0d1;
+}
+
+#content {
 }
 
 /* menu */
@@ -153,4 +153,109 @@ body {
 .facebook-box {
 	width: 50%;
 	float: left;
+}
+
+.hidden {
+	display: none;
+}
+
+.category-list ul li {
+	list-style: none;
+}
+
+
+
+
+
+.product-list > div {
+	overflow: auto;
+	margin-bottom: 15px;
+	background: url('../image/termek_box.png') no-repeat center top;
+	width: 980px;
+	height: 363px;
+	position:relative;
+}
+.product-list .right {
+	float: right;
+	margin-left: 15px;
+}
+.product-list > div + div {
+	border-top: 1px solid #EEEEEE;
+	padding-top: 16px;
+}
+.product-list .image {
+	position: absolute;
+	margin: 10px;
+	left: 160px;
+	top: 110px;
+}
+.product-list .image img {
+	padding: 3px;
+	border: 1px solid #E7E7E7;
+}
+.product-list .name {
+	margin: 10px;
+	padding: 20px;
+	position: absolute;
+	left: 530px;
+	top: 25px;
+}
+.product-list .name a {
+	color: #38B0E3;
+	font-weight: bold;
+	text-decoration: none;
+}
+.product-list .description {
+	line-height: 15px;
+	margin-bottom: 5px;
+	color: #4D4D4D;
+	position: absolute;
+	top: 80px;
+	left: 560px;
+	width: 200px;
+}
+.product-list .rating {
+	color: #7B7B7B;
+}
+.product-list .price {
+	height: 50px;
+	margin-left: 8px;
+	text-align: right;
+	color: #333333;
+	font-size: 12px;
+	position: absolute;
+	left: 550px;
+	top: 200px;
+}
+.product-list .price-old {
+	color: #F00;
+	text-decoration: line-through;
+}
+.product-list .price-new {
+	font-weight: bold;
+}
+.product-list .price-tax {
+	font-size: 12px;
+	font-weight: normal;
+	color: #BBBBBB;
+}
+.product-list .cart {
+	margin-bottom: 3px;
+}
+.product-list .wishlist, .product-list .compare {
+	margin-bottom: 3px;
+}
+.product-list .wishlist a {
+	color: #333333;
+	text-decoration: none;
+	padding-left: 18px;
+	display: block;
+	background: url('../image/add.png') left center no-repeat;
+}
+.product-list .compare a {
+	color: #333333;
+	text-decoration: none;
+	padding-left: 18px;
+	display: block;
+	background: url('../image/add.png') left 60% no-repeat;
 }
