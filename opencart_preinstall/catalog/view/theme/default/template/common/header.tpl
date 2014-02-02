@@ -91,7 +91,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 		<li>
 			<div style="padding-left: 10px;">
 				<a href="" class="round_button_url">
-					<div class="round_button" style="width:23px; height:23px;">
+					<div class="round_button" >
 					</div>
 				</a>
 				<label class="menu_label">Fooldal</label>
@@ -101,7 +101,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 		<li>
 			<div style="padding-left: 10px;">
 				<a href="<?php echo $category['href']; ?>" class="round_button_url">
-					<div class="round_button" style="width:23px; height:23px;">
+					<div class="round_button" >
 					</div>
 				</a>
 				<label class="menu_label"><?php echo $category['name']; ?></label>
@@ -111,7 +111,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 		<li>
 			<div style="padding-left: 10px;">
 				<a href="index.php?route=information/contact" class="round_button_url">
-					<div class="round_button" style="width:23px; height:23px;">
+					<div class="round_button" >
 					</div>
 				</a>
 				<label class="menu_label">Kapcsolat</label>
