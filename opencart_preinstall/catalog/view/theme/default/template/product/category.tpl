@@ -79,22 +79,24 @@
       <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
       <?php } ?>
       <?php if(!$product['thumb']) { ?>
-      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" width="80" height="80" /></a></div>
+      <div class="image"><a href="<?php echo $product['href']; ?>"><img src="" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" width="200" height="200" /></a></div>
       <?php } ?>
-      <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-      <div class="description"><?php echo $product['description']; ?></div>
-      <?php if ($product['price']) { ?>
-      <div class="price">
-        <?php if (!$product['special']) { ?>
-        <?php echo $product['price']; ?>
-        <?php } else { ?>
-       <!-- <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new">--><?php echo $product['special']; ?><!--</span>-->
-        <?php } ?>
-        <?php if ($product['tax']) { ?>
-       <!-- <br />
-        <span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
-        <?php } ?>
-      </div>
+	  <div class="info_holder_box">
+	      <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+	      <div class="description"><?php echo $product['description']; ?></div>
+	      <?php if ($product['price']) { ?>
+	      <div class="price">
+		<?php if (!$product['special']) { ?>
+		<?php echo $product['price']; ?>
+		<?php } else { ?>
+	       <!-- <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new">--><?php echo $product['special']; ?><!--</span>-->
+		<?php } ?>
+		<?php if ($product['tax']) { ?>
+	       <!-- <br />
+		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
+		<?php } ?>
+	      </div>
+	  </div>
       <?php } ?>
       <?php if ($product['rating']) { ?>
       <!--<div class="rating"><img src="catalog/view/theme/default/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>-->
@@ -136,6 +138,9 @@ function display(view) {
 				html += '<div class="image">' + image + '</div>';
 			}
 			
+			var holder = $(element).find('.info_holder_box').html();
+			html += '<div class="info_holder_box">' + holder + '</div>';
+/*
 			var price = $(element).find('.price').html();
 			
 			if (price != null) {
@@ -144,7 +149,7 @@ function display(view) {
 					
 			html += '  <div class="name">' + $(element).find('.name').html() + '</div>';
 			html += '  <div class="description">' + $(element).find('.description').html() + '</div>';
-			
+*/			
 			var rating = $(element).find('.rating').html();
 			
 			if (rating != null) {
