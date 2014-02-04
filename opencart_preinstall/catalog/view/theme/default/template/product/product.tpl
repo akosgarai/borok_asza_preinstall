@@ -5,7 +5,7 @@
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
     <?php } ?>
   </div>
-  <h1><?php echo $heading_title; ?></h1>
+  <h1><?php// echo $heading_title; ?></h1>
   <div class="product-info">
     <?php if ($thumb || $images) { ?>
     <div class="left">
@@ -22,7 +22,7 @@
     </div>
     <?php } ?>
     <div class="right">
-      <div class="description">
+      <div class="hidden description">
         <?php if ($manufacturer) { ?>
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
@@ -232,13 +232,12 @@
         <div class="minimum"><?php echo $text_minimum; ?></div>
         <?php } ?>
       </div>-->
-      <div>
-       <div><h3><?php echo $tab_description; ?></h3></div>
-       <br />	
+      <div class="product-description">
+       <div><h3><?php echo $heading_title; ?></h3></div>
       	<?php echo $description; ?>
       </div>
 
-      <?php if ($review_status) { ?>
+      <?php if ($review_status && false) { ?>
       <div class="review">
         <div><img src="catalog/view/theme/default/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
         <div class="share"><!-- AddThis Button BEGIN -->
@@ -343,7 +342,7 @@
     </div>
   </div>-->
   <?php } ?>
-  <?php if ($tags) { ?>
+  <?php if ($tags && false) { ?>
   <div class="tags"><b><?php echo $text_tags; ?></b>
     <?php for ($i = 0; $i < count($tags); $i++) { ?>
     <?php if ($i < (count($tags) - 1)) { ?>
