@@ -6,8 +6,7 @@
     <?php } ?>
   </div>
   <?php //echo $column_left; ?>
-  <h1><?php echo $heading_title; ?></h1>
-  <?php if ($thumb || $description) { ?>
+ <!-- <?php if ($thumb || $description) { ?>
   <div class="category-info">
     <?php if ($thumb) { ?>
     <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
@@ -16,42 +15,43 @@
     <?php echo $description; ?>
     <?php } ?>
   </div>
-  <?php } ?>
-  <?php if ($categories) { ?>
-  <h2 class="hidden"><?php echo $text_refine; ?></h2>
-  <div class="category-list hidden">
-    <?php if (count($categories) <= 5) { ?>
-    <ul>
-      <?php foreach ($categories as $category) { ?>
-      	<li>
-      		<a class="round_button_url" href="<?php echo $category['href']; ?>">
-			<div class="round_button" style="width:20px;height:20px"></div>
-			<label class="menu_label"><?php echo $category['name']; ?></label>
-		</a>
-	</li>
-      <?php } ?>
-    </ul>
-    <?php } else { ?>
-    <?php for ($i = 0; $i < count($categories);) { ?>
-    <ul>
-      <?php $j = $i + ceil(count($categories) / 4); ?>
-      <?php for (; $i < $j; $i++) { ?>
-      <?php if (isset($categories[$i])) { ?>
-      <li><a href="<?php echo $categories[$i]['href']; ?>"><?php echo $categories[$i]['name']; ?></a></li>
-      <?php } ?>
-      <?php } ?>
-    </ul>
-    <?php } ?>
-    <?php } ?>
-  </div>
-  <?php } ?>
+  <?php } ?>-->
+	<div class="region_selector_container">
+		<div class="region_selector_list">
+  		<h1 style="color: #7d1a16; padding-left: 45pxé"><?php echo $heading_title; ?></h1>
+			<?php if ($categories) { ?>
+				<h2 class="hidden"><?php echo $text_refine; ?></h2>
+				<div class="category-list">
+					<ul style="padding-left: 15px; width: 240px;">
+						<?php foreach ($categories as $category) { ?>
+							<li style="height: 20px; padding-top:19px;">
+								<a class="round_button_url" href="<?php echo $category['href']; ?>" style="float: left; width:240px;">
+									<div class="round_button_vertical" id="region_<?php echo $category['category_id'] ?>" style="width:20px;height:20px; float: left;" onmouseover="hover_on_button(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_button(<?php echo $category['category_id']; ?>);"></div>
+									<label class="menu_label" style="padding-left:10px; min-width: 210px;" id="region_label_<?php echo $category['category_id'] ?>" onmouseover="hover_on_label(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_label(<?php echo $category['category_id']; ?>);"><?php echo $category['name']; ?></label>
+								</a>
+							</li>
+      			<?php } ?>
+   				</ul>
+  			</div>
+  		<?php } ?>
+		</div>
+		<div class="region_selector_map">
+			<?php if ($categories) { ?>
+				<?php foreach ($categories as $category) { ?>
+						<a href="<?php echo $category['href']; ?>">
+							<div class="selectable_region" id="map_region_<?php echo $category['category_id'] ?>" onmouseover="hover_on_map(<?php echo $category['category_id']; ?>);" onmouseout="mouse_out_map(<?php echo $category['category_id']; ?>);"></div>
+						</a>
+  			<?php } ?>
+  		<?php } ?>
+		</div>
+	</div>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
     <div class="limit"><b><?php echo $text_limit; ?></b>
       <select onchange="location = this.value;">
         <?php foreach ($limits as $limits) { ?>
-        <?php if ($limits['value'] == $limit) { ?>
+        <?php if ($limits['value'] == $limit) { ?> 
         <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
         <?php } else { ?>
         <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>

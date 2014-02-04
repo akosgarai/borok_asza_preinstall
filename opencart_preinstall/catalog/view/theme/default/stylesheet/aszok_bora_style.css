@@ -40,7 +40,7 @@
 }
 .menu_label {
 	font-size: 18px;
-	font-family: romansherif sans-sherif;
+	font-family: roman-serif sans-serif;
 }
 .round_button {
 	//background: url('../image/button_white.png');
@@ -259,7 +259,7 @@ body {
 	padding-left: 18px;
 	display: block;
 	background: url('../image/add.png') left 60% no-repeat;
-
+}
 .content_box_left {
 	float: left;
 }
@@ -324,6 +324,79 @@ body {
 .something_big {
 	width: 980px;
 }
-.content_box_left {
-
+.region_selector_list {
+	float: left;
+	width: 262px;
+	height: 454px;
+}
+.region_selector_map {
+	background: url('../image/hungary_alap.png') no-repeat;
+	float: left;
+	height: 454px;
+	width: 718px;
+	position: relative;
+}
+.round_button_vertical {
+	background-color: #eade92;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-khtml-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+	border: 2px #123e1e solid;
+	vertical-align: center;
+	cursor: pointer;
+	width: 22px;
+	height: 22px;
+}
+.round_button_vertical:hover {
+	background-color: #7d1a16;
+	border: 2px #eade92 solid;
+}
+.selectable_region {
+	width: 58px;
+	height: 75px;
+	background: url('../image/szolofurt_sarga.png') no-repeat;
+}
+.selectable_region:hover {
+	background: url('../image/szolofurt_piros.png') no-repeat;
+}
+#map_region_61 {
+	position: absolute;
+	top: 140px;
+	left: 82px;
+}
+#map_region_62 {
+	position: absolute;
+	top: 220px;
+	left: 149px;
+}
+#map_region_63 {
+	position: absolute;
+	top: 140px;
+	left: 163px;
+}
+#map_region_64 {
+	position: absolute;
+	top: 300px;
+	left: 258px;
+}
+#map_region_65 {
+	position: absolute;
+	top: 350px;
+	left: 195px;
+}
+#map_region_66 {
+	position: absolute;
+	top: 95px;
+	left: 418px;
+}
+#map_region_67 {
+	position: absolute;
+	top: 28px;
+	left: 520px;
+}
+#map_region_68 {
+	position: absolute;
+	top: 255px;
+	left: 345px;
 }

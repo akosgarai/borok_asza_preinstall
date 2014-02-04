@@ -180,3 +180,58 @@ function addToCompare(product_id) {
 		}
 	});
 }
+
+function hover_on_map(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#7d1a16';
+	v.style.border = '2px #eade92 solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#123e1e';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_piros.png)";
+}
+function mouse_out_map(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#eade92';
+	v.style.border = '2px #123e1e solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#38b0e3';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
+}
+function hover_on_label(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#7d1a16';
+	v.style.border = '2px #eade92 solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#123e1e';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_piros.png)";
+}
+function mouse_out_label(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#eade92';
+	v.style.border = '2px #123e1e solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#38b0e3';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
+}
+function hover_on_button(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#7d1a16';
+	v.style.border = '2px #eade92 solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#123e1e';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_piros.png)";
+}
+function mouse_out_button(id) {
+	var v = document.getElementById('region_' + id);
+	v.style.backgroundColor = '#eade92';
+	v.style.border = '2px #123e1e solid';
+	var l = document.getElementById('region_label_' + id);
+	l.style.color = '#38b0e3';
+	var g = document.getElementById('map_region_' + id);
+	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
+}
