@@ -9,11 +9,11 @@
 					</div>
 	</div>
 	<div id="contact-box">
-  	<h1><?php echo $heading_title; ?></h1>
-   	<h2><?php echo $text_location; ?></h2>
     <div class="contact-info">
       <div class="content">
 				<div class="address-box">
+					<h1><?php echo $heading_title; ?></h1>
+					<h2><?php echo $text_location; ?></h2>
 					<b><?php echo $text_address; ?></b><br />
         	<?php echo $store; ?><br />
         	<?php echo $address; ?><br />
@@ -29,7 +29,7 @@
 				</div>
       	<div class="map-box">
 					<div class="map-container">
-						<iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.hu/maps?f=q&amp;source=s_q&amp;hl=hu&amp;geocode=&amp;q=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;aq=0&amp;oq=budapest+kossuth+ter&amp;sll=47.161162,19.505383&amp;sspn=4.467371,10.283203&amp;t=h&amp;ie=UTF8&amp;hq=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;ll=47.507113,19.046342&amp;spn=0.006295,0.006295&amp;output=embed&amp;iwloc=near"></iframe>
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.hu/maps?f=q&amp;source=s_q&amp;hl=hu&amp;geocode=&amp;q=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;aq=0&amp;oq=budapest+kossuth+ter&amp;sll=47.161162,19.505383&amp;sspn=4.467371,10.283203&amp;t=h&amp;ie=UTF8&amp;hq=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;ll=47.507113,19.046342&amp;spn=0.006295,0.006295&amp;output=embed&amp;iwloc=near"></iframe>
 					</div>
       	</div>
 				<div id="write-us-text" onclick="document.getElementById('write-us-form').style.display='block'"><span>Leveliras</span></div>
