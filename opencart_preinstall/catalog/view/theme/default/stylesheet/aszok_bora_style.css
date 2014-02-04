@@ -18,6 +18,7 @@
 }
 
 #content {
+max-width: 980px !important;
 }
 
 /* menu */
@@ -127,6 +128,8 @@ body {
 .map-box {
 	width: 73%;
 	float: left;
+	border: 4px solid #123f1e;
+	box-shadow: 7px 7px 13px rgba(0,0,0,0.35);
 }
 
 /* footer */ 
@@ -335,6 +338,8 @@ body {
 	width: 980px;
 	height: 363px;
 	position:relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 .product-list .right {
 	float: right;

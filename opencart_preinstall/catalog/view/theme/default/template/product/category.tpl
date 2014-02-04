@@ -16,15 +16,14 @@
     <?php } ?>
   </div>
   <?php } ?>-->
-	<?php if ($heading_title == 'Boraink') { ?>
-	<div class="region_selector_container">
+	<div class="region_selector_container<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<div class="region_selector_list">
   		<h1 style="color: #7d1a16; padding-left: 45px"><?php echo $heading_title; ?></h1>
-			<?php if ($categories) { ?>
+			<?php if ($listing_regions) { ?>
 				<h2 class="hidden"><?php echo $text_refine; ?></h2>
 				<div class="category-list">
 					<ul style="padding-left: 15px; width: 240px;">
-						<?php foreach ($categories as $category) { ?>
+						<?php foreach ($listing_regions as $category) { ?>
 							<li style="height: 20px; padding-top:19px;">
 								<a class="round_button_url" href="<?php echo $category['href']; ?>" style="float: left; width:240px;">
 									<div class="round_button_vertical" id="region_<?php echo $category['category_id'] ?>" style="width:20px;height:20px; float: left;" onmouseover="hover_on_button(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_button(<?php echo $category['category_id']; ?>);"></div>
@@ -36,9 +35,9 @@
   			</div>
   		<?php } ?>
 		</div>
-		<div class="region_selector_map">
-			<?php if ($categories) { ?>
-				<?php foreach ($categories as $category) { ?>
+		<div class="region_selector_map<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
+			<?php if ($listing_regions) { ?>
+				<?php foreach ($listing_regions as $category) { ?>
 						<a href="<?php echo $category['href']; ?>">
 							<div class="selectable_region" id="map_region_<?php echo $category['category_id'] ?>" onmouseover="hover_on_map(<?php echo $category['category_id']; ?>);" onmouseout="mouse_out_map(<?php echo $category['category_id']; ?>);"></div>
 						</a>
@@ -46,7 +45,6 @@
   		<?php } ?>
 		</div>
 	</div>
-	<?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
