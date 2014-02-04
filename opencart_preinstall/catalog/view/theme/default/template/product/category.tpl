@@ -16,9 +16,10 @@
     <?php } ?>
   </div>
   <?php } ?>-->
+	<?php if ($heading_title == 'Boraink') { ?>
 	<div class="region_selector_container">
 		<div class="region_selector_list">
-  		<h1 style="color: #7d1a16; padding-left: 45pxé"><?php echo $heading_title; ?></h1>
+  		<h1 style="color: #7d1a16; padding-left: 45px"><?php echo $heading_title; ?></h1>
 			<?php if ($categories) { ?>
 				<h2 class="hidden"><?php echo $text_refine; ?></h2>
 				<div class="category-list">
@@ -45,6 +46,7 @@
   		<?php } ?>
 		</div>
 	</div>
+	<?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
