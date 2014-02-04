@@ -16,7 +16,7 @@
     <?php } ?>
   </div>
   <?php } ?>-->
-	<div class="region_selector_container">
+	<div class="region_selector_container<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<div class="region_selector_list">
   		<h1 style="color: #7d1a16; padding-left: 45pxé"><?php echo $heading_title; ?></h1>
 			<?php if ($categories) { ?>
@@ -35,7 +35,7 @@
   			</div>
   		<?php } ?>
 		</div>
-		<div class="region_selector_map">
+		<div class="region_selector_map<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 			<?php if ($categories) { ?>
 				<?php foreach ($categories as $category) { ?>
 						<a href="<?php echo $category['href']; ?>">

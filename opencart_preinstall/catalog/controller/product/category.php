@@ -118,6 +118,11 @@ class ControllerProductCategory extends Controller {
 			$this->data['button_wishlist'] = $this->language->get('button_wishlist');
 			$this->data['button_compare'] = $this->language->get('button_compare');
 			$this->data['button_continue'] = $this->language->get('button_continue');
+			if ($category_id == 60) {
+				$this->data['hide_map'] = 1;
+			} else {
+				$this->data['hide_map'] = 0;
+			}
 			
 			// Set the last category breadcrumb		
 			$url = '';
