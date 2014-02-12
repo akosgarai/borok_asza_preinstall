@@ -235,3 +235,12 @@ function mouse_out_button(id) {
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
+
+function showHideMailForm() {
+	var form = document.getElementById('write-us-form').style;
+	if (form.display != 'none') {
+		form.display = 'none';
+	} else {
+		form.display = 'block';
+	}
+}

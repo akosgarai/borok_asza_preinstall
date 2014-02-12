@@ -1,6 +1,10 @@
 .about_us_container {
 }
 
+.cred{
+	color: #7d1a16;
+	padding: 10px 0;
+}
 .about_us_subject > h1 {
 	text-align:center;
 	color:#123F1E;
@@ -121,12 +125,13 @@ body {
 }
 
 .address-box {
-	width: 434px;
-	min-height: 355px;
+	padding-left: 30px;
+	width: 375px;
+	min-height: 555px;
 	float: left;
 	background: url('../image/borospohar.png') no-repeat right top;
 }
-.map-box {
+.map-container {
 	width: 425px;
 	height: 350px;
 	float: left;
@@ -134,7 +139,16 @@ body {
 	box-shadow: 7px 7px 13px rgba(0,0,0,0.35);
 	margin-left: 40px;
 }
-
+.map-box {
+	min-width: 425px;
+	min-height: 350px;
+}
+.travel-info-box {
+	margin-left: 418px;
+	margin-right: 66px;
+	padding-top: 370px;
+	padding-left: 30px;
+}
 /* footer */ 
 #footer {
 	clear: both;
