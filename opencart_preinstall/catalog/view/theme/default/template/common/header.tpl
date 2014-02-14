@@ -94,7 +94,7 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 					<div class="round_button" >
 					</div>
 				</a>
-				<div class="pos_label"><label class="menu_label">Fooldal</label></div>
+				<div class="pos_label"><label class="menu_label">Főoldal</label></div>
 			</div>
 		</li>
     <?php foreach ($categories as $category) { ?>

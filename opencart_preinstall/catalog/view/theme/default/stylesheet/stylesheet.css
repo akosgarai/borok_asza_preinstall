@@ -673,10 +673,6 @@ ul.box-filter > li ul {
 	margin-right: 15px;
 	border: 1px solid #E7E7E7;
 }
-.category-list {
-	overflow: auto;
-	margin-bottom: 20px;
-}
 .category-list ul {
 	float: left;
 	width: 18%;

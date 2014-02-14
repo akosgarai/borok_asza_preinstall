@@ -27,7 +27,7 @@
 							<li style="height: 20px; padding-top:19px;">
 								<a class="round_button_url" href="<?php echo $category['href']; ?>" style="float: left; width:240px;">
 									<div class="round_button_vertical" id="region_<?php echo $category['category_id'] ?>" style="width:20px;height:20px; float: left;" onmouseover="hover_on_button(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_button(<?php echo $category['category_id']; ?>);"></div>
-									<label class="menu_label" style="padding-left:10px; min-width: 210px;" id="region_label_<?php echo $category['category_id'] ?>" onmouseover="hover_on_label(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_label(<?php echo $category['category_id']; ?>);"><?php echo $category['name']; ?></label>
+									<label class="menu_label" style="padding-left:10px; min-width: 210px; color: #123e1e;" id="region_label_<?php echo $category['category_id'] ?>" onmouseover="hover_on_label(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_label(<?php echo $category['category_id']; ?>);"><?php echo $category['name']; ?></label>
 								</a>
 							</li>
       			<?php } ?>
