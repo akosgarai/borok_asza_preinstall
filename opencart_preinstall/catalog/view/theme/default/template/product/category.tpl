@@ -44,6 +44,17 @@
   			<?php } ?>
   		<?php } ?>
 		</div>
+		<div class="other_categories">
+			<?php foreach($listing_other_categories as $category) { ?>
+				<ul>
+					<li>
+						<a href="<?php echo $category['href']; ?>">
+							<?php echo $category['name']; ?>
+						</a>
+					</li>
+				</ul>
+			<?php } ?>
+		</div>
 	</div>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
@@ -113,9 +124,11 @@
   <?php } ?>
   <?php if (!$categories && !$products) { ?>
   <div class="content"><?php echo $text_empty; ?></div>
+  <?php /* 
   <div class="buttons">
     <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
-  </div>
+  </div> */
+  ?>
   <?php } ?>
   <?php echo $content_bottom; ?></div>
 <script type="text/javascript"><!--

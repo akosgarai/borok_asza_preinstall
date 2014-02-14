@@ -196,6 +196,7 @@ class ControllerProductCategory extends Controller {
 			}
 //Listing the regions
 			$this->data['listing_regions'] = array();
+			$this->data['listing_other_categories'] = array();
 
 			$results = $this->model_catalog_category->getCategories(59);
 
@@ -207,11 +208,20 @@ class ControllerProductCategory extends Controller {
 				
 				$product_total = $this->model_catalog_product->getTotalProducts($data);				
 				
-				$this->data['listing_regions'][] = array(
-					'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
-					'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
-					'category_id' => $result['category_id']
-				);
+				if ($result['category_id'] < 72) { 
+					$this->data['listing_regions'][] = array(
+						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
+						'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
+						'category_id' => $result['category_id']
+					);
+				} else {
+					$this->data['listing_other_categories'][] = array(
+						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
+						'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
+						'category_id' => $result['category_id']
+					);
+				
+				}
 			}
 			
 			$this->data['products'] = array();

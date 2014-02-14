@@ -30,6 +30,7 @@
         <?php } ?>
       </ul>
     </div>
+    <?php /*
     <div class="right">
       <ul>
         <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
@@ -56,5 +57,6 @@
       </ul>
     </div>
   </div>
+  */ ?>
   <?php echo $content_bottom; ?></div>
 <?php echo $footer; ?>
