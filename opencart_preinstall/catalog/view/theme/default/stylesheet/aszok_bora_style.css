@@ -1,9 +1,21 @@
 .about_us_container {
 }
 
+body {
+	background-color: #ffffff;
+	color: #123e1e;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
 .cred{
 	color: #7d1a16;
-	padding: 10px 0;
+	padding: 10px 0 0 0;
+	font-weight: normal;
+}
+h2.cred {
+	font-size: 22px;
 }
 .about_us_subject > h1 {
 	text-align:center;
@@ -24,6 +36,20 @@
 #content {
 max-width: 980px !important;
 }
+/* content */
+#content .content {
+	padding: 10px;
+	overflow: auto;
+	margin-bottom: 20px;
+}
+#content .content .left {
+	float: left;
+	width: 49%;
+}
+#content .content .right {
+	float: right;
+	width: 49%;
+}
 
 /* menu */
 #menu {
@@ -35,18 +61,22 @@ max-width: 980px !important;
 #menu ul {
 	list-style: none;
 	padding-top: 260px;
-	margin-left: 181px
+	margin-left: 142px
 }
 #menu > ul > li {
 	position: relative;
 	float: left;
 	z-index: 20;
-	padding: 6px 25px 25px 0px;
-	margin: 0px 14px;
+	width: 153px;
+	text-align: center;
 }
 .menu_label {
 	font-size: 18px;
 	font-family: roman-serif sans-serif;
+}
+.pos_label {
+	padding-top: 7px;
+	color: #123e1e;
 }
 .round_button {
 	//background: url('../image/button_white.png');
@@ -579,4 +609,38 @@ body {
 	position: absolute;
 	top: 255px;
 	left: 345px;
+}
+
+#write-us-text {
+	padding-left: 60px;
+	width: 185px;
+}
+
+#write-us-form {
+	padding: 20px 0 0 25px;
+}
+
+.contact-text {
+	font-size: 21px;
+}
+
+.mailsubmitbutton {
+	cursor: pointer;
+	background-color: #7d1a16;
+	color: #FFFFFF;
+	line-height: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-khtml-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
+	-moz-box-shadow: 0px 2px 2px #DDDDDD;
+	box-shadow: 0px 2px 2px #DDDDDD;
+	margin: 0;
+	border: 0;
+	height: 24px;
+	padding: 0px 12px 0px 12px;
 }

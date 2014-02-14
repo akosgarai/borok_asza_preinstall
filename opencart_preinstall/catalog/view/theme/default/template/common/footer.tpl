@@ -5,7 +5,7 @@
 			<g:plusone></g:plusone>
 		</div>
 		<div class="facebook-box">
-			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 		</div>
 	</div>
   <?php if ($informations) { ?>
