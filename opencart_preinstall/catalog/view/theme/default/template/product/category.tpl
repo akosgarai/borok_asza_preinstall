@@ -18,7 +18,7 @@
   <?php } ?>-->
 	<div class="region_selector_container<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<div class="region_selector_list">
-  		<h1 style="color: #7d1a16; padding-left: 45px"><?php echo $heading_title; ?></h1>
+  		<h1 style="color: #7d1a16; padding-left: 49px; font-size: 37px; margin: 15px 0 0 0"><?php echo $heading_title; ?></h1>
 			<?php if ($listing_regions) { ?>
 				<h2 class="hidden"><?php echo $text_refine; ?></h2>
 				<div class="category-list">
@@ -27,7 +27,7 @@
 							<li style="height: 20px; padding-top:19px;">
 								<a class="round_button_url" href="<?php echo $category['href']; ?>" style="float: left; width:240px;">
 									<div class="round_button_vertical" id="region_<?php echo $category['category_id'] ?>" style="width:20px;height:20px; float: left;" onmouseover="hover_on_button(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_button(<?php echo $category['category_id']; ?>);"></div>
-									<label class="menu_label" style="padding-left:10px; min-width: 210px; color: #123e1e;" id="region_label_<?php echo $category['category_id'] ?>" onmouseover="hover_on_label(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_label(<?php echo $category['category_id']; ?>);"><?php echo $category['name']; ?></label>
+									<label class="menu_label" style="padding-left:13px; min-width: 210px; color: #123e1e;" id="region_label_<?php echo $category['category_id'] ?>" onmouseover="hover_on_label(<?php echo $category['category_id']; ?>)" onmouseout="mouse_out_label(<?php echo $category['category_id']; ?>);"><?php echo $category['name']; ?></label>
 								</a>
 							</li>
       			<?php } ?>
@@ -44,18 +44,20 @@
   			<?php } ?>
   		<?php } ?>
 		</div>
+	</div>
 		<div class="other_categories">
-			<?php foreach($listing_other_categories as $category) { ?>
-				<ul>
-					<li>
+			<ul>
+				<?php foreach($listing_other_categories as $category) { ?>
+					<li class="other_categories_list">
 						<a href="<?php echo $category['href']; ?>">
-							<?php echo $category['name']; ?>
+							<div class="glass"></div>
+							<div class="glass_text"><?php echo $category['name']; ?></div>
 						</a>
 					</li>
-				</ul>
-			<?php } ?>
+				<?php } ?>
+			</ul>
 		</div>
-	</div>
+		<div class="clear"></div>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>

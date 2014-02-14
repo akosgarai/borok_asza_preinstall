@@ -10,7 +10,7 @@
 	</div>
 	<div id="contact-box">
     <div class="contact-info">
-      <div class="content">
+      <div class="content" style="min-height: 700px;">
 				<div class="address-box">
 					<h1 class="cred"><?php echo $heading_title; ?>:</h1>
 					<h2 class="cred"><?php echo $text_address; ?></h2>
@@ -27,7 +27,7 @@
 					<?php } ?>
 					<div onclick="showHideMailForm();" style="margin-top: 20px; width: 200px;">
 						<div class="round_button" style="float: left; margin-top: 15px; margin-left: 20px"></div>
-						<div id="write-us-text" ><h1 class="cred">Irjon Nekunk</h1></div>
+						<div id="write-us-text" ><h1 class="cred">Írjon Nekünk</h1></div>
 					</div>
 					<div id="write-us-form" style="display:none;">
 						<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">

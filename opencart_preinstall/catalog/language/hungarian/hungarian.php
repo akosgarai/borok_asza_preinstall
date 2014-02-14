@@ -16,7 +16,7 @@ $_['text_none']             = ' --- Nincs --- ';
 $_['text_select']           = ' --- Válasszon --- ';
 $_['text_all_zones']        = 'Minden zóna';
 $_['text_pagination']       = 'Tételek: {start} - {end} / {total} ({pages} oldal)';
-$_['text_separator']        = ' &gt; ';
+$_['text_separator']        = ' / ';
 
 // Buttons
 $_['button_add_address']    = 'Cím kitöltése';

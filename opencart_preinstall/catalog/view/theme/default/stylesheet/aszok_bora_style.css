@@ -71,7 +71,7 @@ max-width: 980px !important;
 	text-align: center;
 }
 .menu_label {
-	font-size: 18px;
+	font-size: 21px;
 	font-family: roman-serif sans-serif;
 }
 .pos_label {
@@ -145,12 +145,6 @@ body {
 }
 
 .menu-bc-container {
-}
-
-.breadcrumb {
-	color: #CCCCCC;
-	margin-bottom: 10px;
-	padding-left: 30px;
 }
 
 #contact-box {
@@ -421,6 +415,7 @@ body {
 /* Listazas */
 .product-list {
 	font-family: roman-serif sans-sherif;
+	margin-top: 20px;
 }
 
 .product-list > div {
@@ -720,4 +715,53 @@ body {
 	border: 0;
 	height: 24px;
 	padding: 0px 12px 0px 12px;
+}
+
+.breadcrumb {
+	color: #123e1e;
+	margin-bottom: 10px;
+	margin-left: 87px;
+}
+
+a, a:visited, a b {
+	color: #123e1e;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+
+.other_categories_list {
+	width: 33%;
+	float: left;
+}
+.other_categories_list a{
+	font-size: 21px;
+	color: #7d1a16;
+}
+.other_categories {
+	margin-left: 70px;
+}
+.other_categories ul{
+	list-style-type: none;
+}
+
+.glass {
+	background-image: url('../image/pohar45.png');
+	background-repeat: no-repeat;
+	height: 45px;
+	width: 20px;
+	float: left;
+}
+
+.glass_text {
+	padding: 11px 0 0 30px;
+}
+
+.clear {
+	clear: both;
 }
