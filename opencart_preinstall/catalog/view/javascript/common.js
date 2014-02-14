@@ -195,7 +195,7 @@ function mouse_out_map(id) {
 	v.style.backgroundColor = '#eade92';
 	v.style.border = '2px #123e1e solid';
 	var l = document.getElementById('region_label_' + id);
-	l.style.color = '#38b0e3';
+	l.style.color = '#123e1e';
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
@@ -213,7 +213,7 @@ function mouse_out_label(id) {
 	v.style.backgroundColor = '#eade92';
 	v.style.border = '2px #123e1e solid';
 	var l = document.getElementById('region_label_' + id);
-	l.style.color = '#38b0e3';
+	l.style.color = '#123e1e';
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
@@ -231,7 +231,7 @@ function mouse_out_button(id) {
 	v.style.backgroundColor = '#eade92';
 	v.style.border = '2px #123e1e solid';
 	var l = document.getElementById('region_label_' + id);
-	l.style.color = '#38b0e3';
+	l.style.color = '#123e1e';
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
