@@ -445,36 +445,6 @@ table.radio tr.highlight:hover td {
 	background: #F1FFDD;
 	cursor: pointer;
 }
-.pagination {
-	border-top: 1px solid #EEEEEE;
-	padding-top: 8px;
-	display: inline-block;
-	width: 100%;
-	margin-bottom: 10px;
-}
-.pagination .links {
-	float: left;
-}
-.pagination .links a {
-	display: inline-block;
-	border: 1px solid #EEEEEE;
-	padding: 4px 10px;
-	text-decoration: none;
-	color: #A3A3A3;
-}
-.pagination .links b {
-	display: inline-block;
-	border: 1px solid #269BC6;
-	padding: 4px 10px;
-	font-weight: normal;
-	text-decoration: none;
-	color: #269BC6;
-	background: #FFFFFF;
-}
-.pagination .results {
-	float: right;
-	padding-top: 3px;
-}
 /* button */
 a.button, input.button {
 	cursor: pointer;
@@ -691,12 +661,6 @@ ul.box-filter > li ul {
 	padding-bottom: 10px;
 }
 /* content */
-#content .content {
-	padding: 10px;
-	overflow: auto;
-	margin-bottom: 20px;
-	border: 1px solid #EEEEEE;
-}
 #content .content .left {
 	float: left;
 	width: 49%;

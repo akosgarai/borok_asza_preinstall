@@ -164,15 +164,54 @@ body {
 #footer li {
 	float: left;
 	width: 33%;
+	list-style: none;
+}
+#footer li a {
+	color: black;
 }
 .gplus-box {
-	text-align: right;
-	width: 50%;
 	float: left;
+	padding: 0px 60px;
 }
 .facebook-box {
-	width: 50%;
 	float: left;
+	padding: 0px 60px;
+}
+
+#footer .footer-link {
+	float: left;
+	width: 75px;
+}
+
+#footer .footer-link a {
+	font-family: roman-serif sans-serif;
+	font-size: 20px;
+	color: #123e1e;
+	text-decoration: none;
+}
+#footer .footer-link a:hover {
+	font-family: roman-serif sans-serif;
+	font-size: 20px;
+	color: #123e1e;
+	font-weight: bold;
+	text-decoration: none;
+}
+#footer .footer-link a:visited {
+	font-family: roman-serif sans-serif;
+	font-size: 20px;
+	color: #123e1e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#footer .footer-link.contact{
+	padding-right: 60px;
+	padding-left: 45px;
+}
+
+#footer .footer-link.sitemap{
+	padding-right: 45px;
+	float:right;
 }
 
 .hidden {
@@ -579,4 +618,34 @@ body {
 	position: absolute;
 	top: 255px;
 	left: 345px;
+}
+/* Pagination */
+.pagination {
+	padding-top: 8px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.pagination .links {
+	float: left;
+}
+.pagination .links a {
+	display: inline-block;
+	border: 1px solid #EEEEEE;
+	padding: 4px 10px;
+	text-decoration: none;
+	color: #A3A3A3;
+}
+.pagination .links b {
+	display: inline-block;
+	border: 1px solid #269BC6;
+	padding: 4px 10px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #269BC6;
+	background: #FFFFFF;
+}
+.pagination .results {
+	float: right;
+	padding-top: 3px;
 }
