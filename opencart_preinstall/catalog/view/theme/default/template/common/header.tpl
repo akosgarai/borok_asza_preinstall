@@ -89,32 +89,32 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 <div id="menu">
 	<ul>
 		<li>
-			<div style="padding-left: 10px;">
+			<div>
 				<a href="" class="round_button_url">
 					<div class="round_button" >
 					</div>
 				</a>
-				<label class="menu_label">Fooldal</label>
+				<div class="pos_label"><label class="menu_label">Fooldal</label></div>
 			</div>
 		</li>
     <?php foreach ($categories as $category) { ?>
 		<li>
-			<div style="padding-left: 10px;">
+			<div>
 				<a href="<?php echo $category['href']; ?>" class="round_button_url">
 					<div class="round_button" >
 					</div>
 				</a>
-				<label class="menu_label"><?php echo $category['name']; ?></label>
+				<div class="pos_label"><label class="menu_label"><?php echo $category['name']; ?></label></div>
 			</div>
 		</li>
     <?php } ?>
 		<li>
-			<div style="padding-left: 10px;">
+			<div>
 				<a href="index.php?route=information/contact" class="round_button_url">
 					<div class="round_button" >
 					</div>
 				</a>
-				<label class="menu_label">Kapcsolat</label>
+				<div class="pos_label"><label class="menu_label">Kapcsolat</label></div>
 			</div>
 		</li>
 	</ul>
