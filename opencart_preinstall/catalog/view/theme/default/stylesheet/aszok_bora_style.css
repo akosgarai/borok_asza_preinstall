@@ -462,10 +462,15 @@ body {
 }
 .product-list .price {
 	height: 50px;
-	color: #333333;
 	font-size: 14px;
 	position: relative;
 	top: 30px;
+}
+.product-list .price1 {
+	float: left;
+}
+.product-list .ltrPrice {
+	float: right;
 }
 .product-list .price-old {
 	color: #F00;
@@ -718,8 +723,7 @@ a, a:visited, a b {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
-	font-weight: bold;
+	text-decoration: underline;
 }
 a img {
 	border: none;

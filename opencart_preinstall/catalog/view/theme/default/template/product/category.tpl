@@ -18,7 +18,7 @@
   <?php } ?>-->
 	<div class="region_selector_container<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<div class="region_selector_list">
-  		<h1 style="color: #7d1a16; padding-left: 49px; font-size: 37px; margin: 15px 0 0 0"><?php echo $heading_title; ?></h1>
+  		<div style="width:300px;"><h1 style="color: #7d1a16; padding-left: 49px; font-size: 37px; margin: 15px 0 0 0"><?php echo $heading_title; ?></h1></div>
 			<?php if ($listing_regions) { ?>
 				<h2 class="hidden"><?php echo $text_refine; ?></h2>
 				<div class="category-list">
@@ -98,8 +98,10 @@
 	      <div class="description"><?php echo $product['description']; ?></div>
 	      <?php if ($product['price']) { ?>
 	      <div class="price">
-		<?php if (!$product['special']) { ?>
+		<?php if (!$product['special'] && $product['price'] != 0) { ?>
+		<div class="price1">
 		<?php echo $product['price']; ?>
+		</div>
 		<?php } else { ?>
 	       <!-- <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new">--><?php echo $product['special']; ?><!--</span>-->
 		<?php } ?>
@@ -107,6 +109,11 @@
 	       <!-- <br />
 		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
 		<?php } ?>
+		<div class="ltrPrice">
+		<?php if ($product['ltrPrice'] && $product['ltrPrice'] != '') { ?>
+			<?php echo $product['ltrPrice'] . " Ft/l";?>
+		<?php } ?>
+		</div>
 	      </div>
 	  </div>
       <?php } ?>

@@ -96,6 +96,10 @@
                 <td><?php echo $entry_price; ?></td>
                 <td><input type="text" name="price" value="<?php echo $price; ?>" /></td>
             </tr>
+            <tr>
+                <td><?php echo $entry_ltrPrice; ?></td>
+                <td><input type="text" name="ltrPrice" value="<?php echo $ltrPrice; ?>" /></td>
+            </tr>
             <tr class="hidden">
               <td><?php echo $entry_tax_class; ?></td>
               <td><select name="tax_class_id">

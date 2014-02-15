@@ -379,6 +379,7 @@ class ControllerCatalogProduct extends Controller {
 				'name'       => $result['name'],
 				'model'      => $result['model'],
 				'price'      => $result['price'],
+				'ltrPrice'      => $result['ltrPrice'],
 				'special'    => $special,
 				'image'      => $image,
 				'quantity'   => $result['quantity'],
@@ -562,6 +563,7 @@ class ControllerCatalogProduct extends Controller {
     	$this->data['entry_quantity'] = $this->language->get('entry_quantity');
 		$this->data['entry_stock_status'] = $this->language->get('entry_stock_status');
     	$this->data['entry_price'] = $this->language->get('entry_price');
+    	$this->data['entry_ltrPrice'] = $this->language->get('entry_ltrPrice');
 		$this->data['entry_tax_class'] = $this->language->get('entry_tax_class');
 		$this->data['entry_points'] = $this->language->get('entry_points');
 		$this->data['entry_option_points'] = $this->language->get('entry_option_points');
@@ -863,6 +865,14 @@ class ControllerCatalogProduct extends Controller {
       		$this->data['price'] = '';
     	}
 		
+    	if (isset($this->request->post['ltrPrice'])) {
+      		$this->data['ltrPrice'] = $this->request->post['ltrPrice'];
+    	} elseif (!empty($product_info)) {
+			$this->data['ltrPrice'] = $product_info['ltrPrice'];
+		} else {
+      		$this->data['ltrPrice'] = '';
+    	}
+
         $this->load->model('catalog/profile');
         
         $this->data['profiles'] = $this->model_catalog_profile->getProfiles();

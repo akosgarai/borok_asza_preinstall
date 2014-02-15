@@ -277,6 +277,7 @@ class ControllerProductCategory extends Controller {
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 240) . '..',
 					//'description' => strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')),
 					'price'       => $price,
+					'ltrPrice'       => $result['ltrPrice'],
 					'special'     => $special,
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
