@@ -1,6 +1,15 @@
 .about_us_container {
 }
 
+.about_us_image {
+	background-image: url('../image/hp_img.jpg');
+	width: 400px;
+	height: 300px;
+	border: 4px solid #123e1e;
+	margin-top: 80px;
+	float: right;
+}
+
 body {
 	background-color: #ffffff;
 	color: #123e1e;
@@ -27,6 +36,8 @@ h2.cred {
 	font-size: 14px;
 	font-family: roman-serif sans-serif;
 	margin-top: 20px;
+	width: 470px;
+	float: left;
 }
 
 #content {

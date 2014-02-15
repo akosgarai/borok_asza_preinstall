@@ -9,4 +9,6 @@
 		<br />
 		<p>Edit, István</p>
 	</div>
+	<div class="about_us_image">
+	</div>
 </div>
