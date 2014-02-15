@@ -213,18 +213,10 @@ body {
 	text-decoration: none;
 }
 #footer .footer-link a:hover {
-	font-family: roman-serif sans-serif;
-	font-size: 20px;
-	color: #123e1e;
 	font-weight: bold;
-	text-decoration: none;
 }
 #footer .footer-link a:visited {
-	font-family: roman-serif sans-serif;
-	font-size: 20px;
-	color: #123e1e;
 	font-weight: bold;
-	text-decoration: none;
 }
 
 #footer .footer-link.contact{
@@ -264,12 +256,12 @@ body {
 	margin-left: 265px;
 }
 .product-info .image {
-	margin-bottom: 20px;
-	padding: 10px;
+	margin: 10px 10px 30px 10px;
 	text-align: center;
 	position: absolute;
 	top: 50px;
 	left: 115px;
+	background-color: white;
 }
 .product-info .image img{
 	border: 4px solid #123e1e;
@@ -436,6 +428,7 @@ body {
 	margin: 10px;
 	left: 150px;
 	top: 60px;
+	background-color: white;
 }
 .product-list .image img {
 	border: 4px solid #123e1e;
@@ -726,6 +719,7 @@ a, a:visited, a b {
 }
 a:hover {
 	text-decoration: none;
+	font-weight: bold;
 }
 a img {
 	border: none;

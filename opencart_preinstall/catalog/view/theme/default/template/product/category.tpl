@@ -45,19 +45,18 @@
   		<?php } ?>
 		</div>
 	</div>
-		<div class="other_categories">
-			<ul>
-				<?php foreach($listing_other_categories as $category) { ?>
-					<li class="other_categories_list">
-						<a href="<?php echo $category['href']; ?>">
-							<div class="glass"></div>
-							<div class="glass_text"><?php echo $category['name']; ?></div>
-						</a>
-					</li>
-				<?php } ?>
-			</ul>
-		</div>
-		<div class="clear"></div>
+	<div class="other_categories<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
+		<ul>
+			<?php foreach($listing_other_categories as $category) { ?>
+				<li class="other_categories_list">
+					<a href="<?php echo $category['href']; ?>">
+						<div class="glass"></div>
+						<div class="glass_text"><?php echo $category['name']; ?></div>
+					</a>
+				</li>
+			<?php } ?>
+		</ul>
+	</div>
   <?php if ($products) { ?>
   <div class="product-filter hidden">
     <div class="display"><b><?php echo $text_display; ?></b> <?php echo $text_list; ?> <b>/</b> <a onclick="display('grid');"><?php echo $text_grid; ?></a></div>
