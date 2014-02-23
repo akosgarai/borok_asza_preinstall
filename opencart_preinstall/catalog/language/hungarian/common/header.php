@@ -12,4 +12,5 @@ $_['text_account']  = 'Fiók';
 $_['text_checkout'] = 'Pénztár';
 $_['text_language'] = 'Nyelv';
 $_['text_currency'] = 'Pénznem';
+$_['text_transporter']        = 'Szállító';
 ?>

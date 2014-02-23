@@ -115,6 +115,18 @@ class ControllerInformationContact extends Controller {
 			$this->template = 'default/template/information/contact.tpl';
 		}
 		
+		$this->load->model('catalog/information');
+		$transporters = $this->model_catalog_information->getTransporter();
+			foreach ($transporters as $result) {
+				$this->data['transporters'][] = array(
+					'transporter_name' => $result['transporter_name'],
+					'transporter_address' => $result['transporter_address'],
+					'transporter_information' => $result['transporter_information'],
+					'price_local' => $result['price_local'],
+					'price_abroad' => $result['price_abroad']
+				);
+			}	
+
 		$this->children = array(
 			'common/column_left',
 			'common/column_right',

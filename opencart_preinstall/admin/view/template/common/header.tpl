@@ -78,6 +78,7 @@ $(document).ready(function(){
             </ul>
           </li>
           <li class="unused_shit"><a href="<?php echo $option; ?>"><?php echo $text_option; ?></a></li>
+          <li><a href="<?php echo $transporter; ?>"><?php echo $text_transporter; ?></a></li>
           <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li>
           <li class="unused_shit"><a href="<?php echo $review; ?>"><?php echo $text_review; ?></a></li>

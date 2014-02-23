@@ -21,5 +21,9 @@ class ModelCatalogInformation extends Model {
 			return $this->config->get('config_layout_information');
 		}
 	}	
+	  public function getTransporter() {
+    	$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "transporter WHERE transporter_id = 1 LIMIT 1");
+    	return $query->rows;
+    }
 }
 ?>

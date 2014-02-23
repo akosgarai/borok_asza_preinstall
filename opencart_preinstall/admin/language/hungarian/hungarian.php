@@ -26,6 +26,7 @@ $_['text_separator']          = ' &gt; ';
 $_['text_edit']               = 'Módosítás';
 $_['text_view']               = 'Nézet';
 $_['text_home']               = 'Kezdőlap';
+$_['text_transporter']        = 'Szállító';
 
 // Button
 $_['button_insert']           = 'Beszúrás';
