@@ -69,6 +69,7 @@ $_['text_tax']                         = 'Adók';
 $_['text_tax_class']                   = 'Adó osztályok';
 $_['text_tax_rate']                    = 'Adókulcsok';
 $_['text_total']                       = 'Rendelés menete';
+$_['text_faq']									       = 'Gyakran ismételt kérdések';
 $_['text_transporter']					       = 'Szállító';
 $_['text_user']                        = 'Felhasználó';
 $_['text_documentation']               = 'Dokumentáció';
