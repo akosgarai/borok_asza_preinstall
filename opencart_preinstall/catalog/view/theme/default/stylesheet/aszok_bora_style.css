@@ -741,7 +741,7 @@ a img {
 }
 
 .other_categories_list {
-	width: 33%;
+	width: 25%;
 	float: left;
 }
 .other_categories_list a{
@@ -750,6 +750,7 @@ a img {
 }
 .other_categories {
 	margin-left: 70px;
+	display: inline;
 }
 .other_categories ul{
 	list-style-type: none;
