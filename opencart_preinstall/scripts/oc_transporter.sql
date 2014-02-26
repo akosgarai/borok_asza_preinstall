@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `oc_transporter`
+-- Table structure for table `abdb_transporter`
 --
 
-CREATE TABLE IF NOT EXISTS `oc_transporter` (
+CREATE TABLE IF NOT EXISTS `abdb_transporter` (
   `transporter_id` int(11) NOT NULL AUTO_INCREMENT,
   `transporter_name` varchar(200) CHARACTER SET latin2 COLLATE latin2_hungarian_ci NOT NULL,
   `transporter_address` varchar(200) CHARACTER SET latin2 COLLATE latin2_hungarian_ci NOT NULL,
@@ -37,11 +37,11 @@ CREATE TABLE IF NOT EXISTS `oc_transporter` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `oc_transporter`
+-- Dumping data for table `abdb_transporter`
 --
 
-INSERT INTO `oc_transporter` (`transporter_id`, `transporter_name`, `transporter_address`, `transporter_information`, `price_local`, `price_abroad`) VALUES
-(1, 'szallito ceg Kft.', 'Budapest, 1111, Fehervari ut 113/A', 'Ez a szerzodott szallitoceg, aki szallitja a borainkat nagy igyekezettel.', 900, 2300);
+INSERT INTO `abdb_transporter` (`transporter_id`, `transporter_name`, `transporter_address`, `transporter_information`, `price_local`, `price_abroad`) VALUES
+(1, 'szallito ceg Kft.', 'Budapest, 1111, Fehérvári út 113/A', 'Ez a szerzõdött szállítócég, aki szállítja a borainkat nagy igyekezettel.', 900, 2300);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
