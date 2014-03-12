@@ -113,3 +113,12 @@ document.onkeydown = function(e) {
 		}
 	}	
 }
+
+function showHideDescription(element) {
+	var row = element.parentNode.parentNode.childNodes[3];
+	if (row.style.display == "none") {
+		row.style.display = "block";
+	} else {
+		row.style.display = "none";
+	}
+}

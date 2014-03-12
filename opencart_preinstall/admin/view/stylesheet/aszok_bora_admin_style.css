@@ -5,3 +5,38 @@
 .hidden {
 	display: none;
 }
+.faq-admin {
+	width: 100%;
+}
+.faq-admin  div {
+	border: 1px solid #cccccc;
+}
+
+.row-top {
+	width: 100%;
+	min-height: 20px;
+}
+.row-bottom >div {
+	border: 1px solid #ffffff;
+}
+.faq_subject {
+	width: 89%;
+	float: left;
+	height: 18px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 2px;
+}
+.left_box {
+	width: 2%;
+	float: left;
+}
+.right_box {
+	width: 8%;
+	float: left;
+	height: 18px;
+	padding-top: 2px;
+	font-size: 13px;
+	text-align: center;
+}

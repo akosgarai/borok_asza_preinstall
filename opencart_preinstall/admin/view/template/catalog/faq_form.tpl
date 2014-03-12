@@ -17,15 +17,20 @@
 						<td>Kérdés címe:</td>
             <td><input 	type="text" 
 												name="faq_title" 
-												size="100" />
+												size="100" 
+												<?php if ($faq_title) { ?>value="<?php echo $faq_title; ?>" <?php } ?>
+												/>
 						</td>
           </tr>
           <tr>
 						<td>Válasz:</td>
-            <td><textarea cols="100" rows="20" type="text" name="faq_description"></textarea>
+            <td><textarea cols="100" rows="20" type="text" name="faq_description"><?php if ($faq_description) { ?><?php echo $faq_description; ?><?php } ?></textarea>
 						</td>
           </tr>
 				</table>
+				<?php if ($faq_id) { ?>
+				<input type="hidden" name="id" value="<?php echo $faq_id; ?>" />
+				<?php } ?>
 			</form>
 		</div>
 	</div>
