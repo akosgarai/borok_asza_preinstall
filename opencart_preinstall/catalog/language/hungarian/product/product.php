@@ -2,7 +2,7 @@
 // Text
 $_['text_search']       = 'Keresés';
 $_['text_brand']        = 'Márka';
-$_['text_manufacturer'] = 'Gyártó:';
+$_['text_manufacturer'] = 'Termelő:';
 $_['text_model']        = 'Típus:';
 $_['text_reward']       = 'Hűségpontok:';
 $_['text_points']       = 'Ár hűségpontban:';

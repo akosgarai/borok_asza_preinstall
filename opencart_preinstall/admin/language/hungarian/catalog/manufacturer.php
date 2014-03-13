@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']      = 'Gyártó';
+$_['heading_title']      = 'Termelő';
 
 // Text
 $_['text_success']       = 'Siker: A gyártó módosítása megtörtént!';
@@ -12,12 +12,12 @@ $_['text_percent']       = 'Százalék';
 $_['text_amount']        = 'Fix összeg';
 
 // Column
-$_['column_name']        = 'Gyártó';
+$_['column_name']        = 'Termelő';
 $_['column_sort_order']  = 'Sorrend';
 $_['column_action']      = 'Művelet';
 
 // Entry
-$_['entry_name']         = 'Gyártó neve:';
+$_['entry_name']         = 'Termelő neve:';
 $_['entry_store']        = 'Áruházak:';
 $_['entry_keyword']      = 'SEO Kulcsszó:';
 $_['entry_image']        = 'Kép:';

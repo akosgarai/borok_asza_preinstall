@@ -5,7 +5,7 @@ $_['heading_title']     = 'Akciós ajánlataink';
 // Text
 $_['text_empty']        = 'Nincsenek akciós ajánlatú termékeink.';
 $_['text_quantity']     = 'Menny.:';
-$_['text_manufacturer'] = 'Gyártó:';
+$_['text_manufacturer'] = 'Termelő:';
 $_['text_model']        = 'Termékkód:';
 $_['text_points']       = 'Hűségpontok:';
 $_['text_price']        = 'Ár:';

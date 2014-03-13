@@ -17,7 +17,7 @@ $_['text_amount']            = 'Fix érték';
 
 // Column
 $_['column_name']            = 'Terméknév';
-$_['column_model']           = 'Gyártmány';
+$_['column_model']           = 'yártmány';
 $_['column_image']           = 'Kép';
 $_['column_quantity']        = 'Mennyiség';
 $_['column_status']          = 'Állapot';
@@ -39,7 +39,7 @@ $_['entry_jan']              = 'JAN:';
 $_['entry_isbn']             = 'ISBN:';
 $_['entry_mpn']              = 'MPN:';
 $_['entry_location']         = 'Egyéb:';
-$_['entry_manufacturer']     = 'Gyártó:';
+$_['entry_manufacturer']     = 'Termelő:';
 $_['entry_shipping']         = 'Szállítandó termék:';
 $_['entry_date_available']   = 'Mikortól kapható:';
 $_['entry_quantity']         = 'Mennyiség:';
