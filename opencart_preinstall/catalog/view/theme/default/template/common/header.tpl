@@ -110,6 +110,15 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
     <?php } ?>
 		<li>
 			<div>
+				<a href="index.php?route=information/faq" class="round_button_url">
+					<div class="round_button" >
+					</div>
+				</a>
+				<div class="pos_label"><label class="menu_label">GYIK</label></div>
+			</div>
+		</li>
+		<li>
+			<div>
 				<a href="index.php?route=information/contact" class="round_button_url">
 					<div class="round_button" >
 					</div>

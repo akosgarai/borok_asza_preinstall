@@ -244,3 +244,10 @@ function showHideMailForm() {
 		form.display = 'block';
 	}
 }
+function setWidthFaqShadow() {
+	var shadow = document.getElementById("faq_shadow").style;
+	var shadowHeight = document.defaultView.getComputedStyle(document.getElementById("faq_container"))["height"];
+	var faqbottom = document.getElementById("faq_bottom").style;
+	faqbottom.paddingTop = shadowHeight;
+	shadow.height = shadowHeight;
+}
