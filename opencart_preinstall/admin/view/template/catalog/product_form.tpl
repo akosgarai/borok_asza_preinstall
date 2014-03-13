@@ -113,7 +113,7 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
+            <tr class="hidden">
               <td><?php echo $entry_quantity; ?></td>
               <td><input type="text" name="quantity" value="<?php echo $quantity; ?>" size="2" /></td>
             </tr>
