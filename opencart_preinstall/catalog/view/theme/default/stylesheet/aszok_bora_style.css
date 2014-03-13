@@ -427,6 +427,9 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.product-list > div:first-child {
+	margin-top: 520px;
+}
 .product-list .right {
 	float: right;
 	margin-left: 15px;
