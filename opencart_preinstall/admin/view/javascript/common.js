@@ -67,7 +67,7 @@ $(document).ready(function() {
 });
 
 var keyCmd = {
-	'AAAAA': {
+	'XXBABXX': {
 		'func': function() {
 			$('.unused_shit').toggle();
 		}
