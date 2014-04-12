@@ -52,6 +52,8 @@ $(document).ready(function(){
     </script>
 </head>
 <body>
+<?php if ($show_login) { ?>
+
 <div id="container">
     <div id="header">
   <div class="div1">
@@ -269,3 +271,4 @@ $(document).ready(function(){
   </div>
   <?php } ?>
 </div>
+<?php } ?>

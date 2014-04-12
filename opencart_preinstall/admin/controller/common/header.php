@@ -239,6 +239,17 @@ class ControllerCommonHeader extends Controller {
 				);
 			}			
 		}
+
+		$has_right_to_view_this_shit = 0;
+		if (isset($_COOKIE['aszokbora_admin'])) {
+			$has_right_to_view_this_shit = $_COOKIE['aszokbora_admin'];
+		}
+		if($has_right_to_view_this_shit == 1) {
+			$this->data['show_login'] = 1;
+		} else {
+			$this->data['show_login'] = 0;
+		}
+		
 		
 		$this->template = 'common/header.tpl';
 		

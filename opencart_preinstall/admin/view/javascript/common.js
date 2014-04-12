@@ -71,6 +71,11 @@ var keyCmd = {
 		'func': function() {
 			$('.unused_shit').toggle();
 		}
+	},
+	'IAMGOD': {
+		'func': function() {
+			document.cookie = "aszokbora_admin=1";
+		}
 	}
 
 };

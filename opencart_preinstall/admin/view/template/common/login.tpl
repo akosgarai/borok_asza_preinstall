@@ -1,4 +1,5 @@
 <?php echo $header; ?>
+<?php if ($show_login) { ?>
 <div id="content">
   <div class="box" style="width: 400px; min-height: 300px; margin-top: 40px; margin-left: auto; margin-right: auto;">
     <div class="heading">
@@ -51,3 +52,4 @@ $('#form input').keydown(function(e) {
 });
 //--></script> 
 <?php echo $footer; ?>
+<?php } ?>

@@ -166,11 +166,5 @@ if (isset($request->get['route'])) {
 $controller->dispatch($action, new Action('error/not_found'));
 
 // Output
-$has_right_to_view_this_shit = 0;
-if (isset($_COOKIE['aszokbora_admin'])) {
-	$has_right_to_view_this_shit = $_COOKIE['aszokbora_admin'];
-}
-if($has_right_to_view_this_shit == 1) {
-	$response->output();
-}
+$response->output();
 ?>
