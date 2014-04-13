@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_home']     = 'Webáruház';
+$_['text_home']     = 'aszokbora.hu';
 $_['text_wishlist'] = 'Kedvencek (%s)';
 $_['text_shopping_cart']  = 'Kosár';
 $_['text_cart']     = 'Kosár';

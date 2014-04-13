@@ -9,7 +9,7 @@ $_['decimal_point']         = ',';
 $_['thousand_point']        = '.';
 
 // Text
-$_['text_home']      	= 'Webáruház';
+$_['text_home']      	= 'aszokbora.hu';
 $_['text_yes']              = 'Igen';
 $_['text_no']               = 'Nem';
 $_['text_none']             = ' --- Nincs --- ';
@@ -18,6 +18,7 @@ $_['text_all_zones']        = 'Minden zóna';
 $_['text_pagination']       = 'Tételek: {start} - {end} / {total} ({pages} oldal)';
 $_['text_separator']        = ' / ';
 $_['text_transporter']        = 'Szállító';
+$_['text_faq']        = 'GYIK';
 
 // Buttons
 $_['button_add_address']    = 'Cím kitöltése';
