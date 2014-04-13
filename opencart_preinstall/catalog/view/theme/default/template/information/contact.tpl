@@ -84,7 +84,7 @@
 				</div>
       	<div class="map-box">
 					<div class="map-container">
-						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.hu/maps?f=q&amp;source=s_q&amp;hl=hu&amp;geocode=&amp;q=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;aq=0&amp;oq=budapest+kossuth+ter&amp;sll=47.161162,19.505383&amp;sspn=4.467371,10.283203&amp;t=h&amp;ie=UTF8&amp;hq=Kossuth+t%C3%A9r,+Budapest,+Kossuth+Lajos+t%C3%A9r&amp;ll=47.507113,19.046342&amp;spn=0.006295,0.006295&amp;output=embed&amp;iwloc=near"></iframe>
+						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.6814315778347!2d19.190448999999997!3d47.457149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c3b3099645ef%3A0x8eef6b6457797ef7!2sNimr%C3%B3d+utca+60!5e0!3m2!1shu!2shu!4v1397385769929"></iframe>
 					</div>
 					<div class="content_transporter">
 						<?php foreach ($transporters as $transporter) {?>
