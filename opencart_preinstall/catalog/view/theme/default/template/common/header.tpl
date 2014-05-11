@@ -2,7 +2,10 @@
 <html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
 <head>
 <meta charset="UTF-8" />
-<title>Aszok Bora<?php //echo $title; ?></title>
+<title> <?php if ($title == "Elérhetőségeink") { ?>
+Borház - 
+<?php } ?>
+Ászok Bora</title>
 <base href="<?php echo $base; ?>" />
 <?php if ($description) { ?>
 <meta name="description" content="<?php echo $description; ?>" />
