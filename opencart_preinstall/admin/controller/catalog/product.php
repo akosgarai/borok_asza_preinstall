@@ -564,6 +564,8 @@ class ControllerCatalogProduct extends Controller {
 		$this->data['entry_stock_status'] = $this->language->get('entry_stock_status');
     	$this->data['entry_price'] = $this->language->get('entry_price');
     	$this->data['entry_ltrPrice'] = $this->language->get('entry_ltrPrice');
+    	$this->data['entry_wineSugar'] = $this->language->get('entry_wineSugar');
+    	$this->data['entry_wineColor'] = $this->language->get('entry_wineColor');
 		$this->data['entry_tax_class'] = $this->language->get('entry_tax_class');
 		$this->data['entry_points'] = $this->language->get('entry_points');
 		$this->data['entry_option_points'] = $this->language->get('entry_option_points');
@@ -872,6 +874,34 @@ class ControllerCatalogProduct extends Controller {
 		} else {
       		$this->data['ltrPrice'] = '';
     	}
+	
+    	if (isset($this->request->post['wineColor'])) {
+      		$this->data['wineColor'] = $this->request->post['wineColor'];
+    	} elseif (!empty($product_info)) {
+			$this->data['wineColor'] = $this->model_catalog_product->getProductWineColor($this->request->get['product_id']);
+		} else {
+      		$this->data['wineColor'] = '';
+    	}
+	
+    	if (isset($this->request->post['wineSugar'])) {
+      		$this->data['wineSugar'] = $this->request->post['wineSugar'];
+    	} elseif (!empty($product_info)) {
+			$this->data['wineSugar'] = $this->model_catalog_product->getProductWineSugar($this->request->get['product_id']);
+		} else {
+      		$this->data['wineSugar'] = '';
+    	}
+
+	$this->load->model('catalog/category');
+	$this->data['category_params'] = array();
+	$results = $this->model_catalog_category->getCategoryParams();
+	foreach ($results as $result) {
+			$this->data['category_params'][] = array(
+				'name'  => $result['name'],
+				'id' => $result['category_param_id'],
+				'type' => $result['type']
+			);
+	}
+
 
         $this->load->model('catalog/profile');
         

@@ -301,5 +301,11 @@ class ModelCatalogCategory extends Model {
 
 		return $query->row['total'];
 	}		
+
+	public function getCategoryParams() {
+		$query = $this->db->query("SELECT name, id as category_param_id, type FROM " . DB_PREFIX . "category_params");
+		return $query->rows;
+	}
+	
 }
 ?>

@@ -100,6 +100,28 @@
                 <td><?php echo $entry_ltrPrice; ?></td>
                 <td><input type="text" name="ltrPrice" value="<?php echo $ltrPrice; ?>" /></td>
             </tr>
+            <tr>
+                <td><?php echo $entry_wineSugar; ?></td>
+                <td>
+			<?php foreach($category_params as $param) { ?>
+				<?php if ($param['type'] == 1) { ?>
+					<input type="radio" name="wineSugar" value="<?php echo $param['id']; ?>" <?php if ($wineSugar == $param['id']) echo "checked"?> />
+					<?php echo $param['name']; ?>
+				<?php } ?>
+			<?php } ?>
+		</td>
+            </tr>
+            <tr>
+                <td><?php echo $entry_wineColor; ?></td>
+                <td>
+			<?php foreach($category_params as $param) { ?>
+				<?php if ($param['type'] == 2) { ?>
+					<input type="radio" name="wineColor" value="<?php echo $param['id']; ?>" <?php if ($wineColor == $param['id']) echo "checked"?> />
+					<?php echo $param['name']; ?>
+				<?php } ?>
+			<?php } ?>
+		</td>
+            </tr>
             <tr class="hidden">
               <td><?php echo $entry_tax_class; ?></td>
               <td><select name="tax_class_id">

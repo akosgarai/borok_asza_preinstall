@@ -47,6 +47,8 @@ $_['entry_minimum']          = 'Minimális mennyiség :<br/><span class="help">M
 $_['entry_stock_status']     = 'Hiánycikk állapot: <br/><span class="help">Az az állaptot, amit megjelenik, ha egy termék nincs raktáron</span>';
 $_['entry_price']            = 'Ár:';
 $_['entry_ltrPrice']            = 'Ár/L:';
+$_['entry_wineSugar']            = 'Cukortartalom:';
+$_['entry_wineColor']            = 'Szin:';
 $_['entry_tax_class']        = 'Áfakulcs:';
 $_['entry_points']           = 'Pontok:<br/><span class="help">Ennyi pontra van szükséged a termék megvásárlásához. Amennyiben nincs rás szüksége 0-val kiléphet.</span>';
 $_['entry_option_points']    = 'Pontok:';
