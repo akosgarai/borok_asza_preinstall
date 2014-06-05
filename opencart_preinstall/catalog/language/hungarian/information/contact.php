@@ -9,16 +9,16 @@ $_['text_address']   = 'Cím:';
 $_['text_email']     = 'E-mail cím:';
 $_['text_telephone'] = 'Telefon:';
 $_['text_fax']       = 'Fax:';
-$_['text_message']   = '<p>Köszönjük, hogy felvette velünk a kapcsolatot. Észrevétele elküldésre került.</p>';
+$_['text_message']   = '<p>Köszönjük, hogy felvette velünk a kapcsolatot. Megrendelése elküldésre került.</p>';
 
 // Entry Fields
 $_['entry_name']     = 'Utónév:';
 $_['entry_email']    = 'E-mail cím:';
-$_['entry_enquiry']  = 'Észrevétel:';
+$_['entry_enquiry']  = 'Megrendelés:';
 $_['entry_captcha']  = 'Írja be az alábbi keretben lévő kódot:';
 
 // Email
-$_['email_subject']  = 'Észrevétel %s';
+$_['email_subject']  = 'Megrendelés %s';
 
 // Errors
 $_['error_name']     = 'A név legalább 3, és legfeljebb 32 karakterből álljon!';
