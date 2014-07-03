@@ -196,7 +196,24 @@ class ControllerProductCategory extends Controller {
 			}
 //Listing the regions
 			$this->data['listing_regions'] = array();
-			$this->data['listing_other_categories'] = array();
+
+			// Balaton sub-categories
+			$sub_results = $this->model_catalog_category->getCategories(62);
+
+			foreach ($sub_results as $sub_result) {
+				$data = array(
+					'filter_category_id'  => $sub_result['category_id'],
+					'filter_sub_category' => true
+				);
+				
+				$sub_product_total = $this->model_catalog_product->getTotalProducts($data);				
+				
+				$this->data['listing_regions'][] = array(
+					'name'  => $sub_result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
+					'href'  => $this->url->link('product/category', 'path=62_' . $sub_result['category_id'] . $url),
+					'category_id' => $sub_result['category_id']
+				);
+			}
 
 			$results = $this->model_catalog_category->getCategories(59);
 
@@ -208,17 +225,13 @@ class ControllerProductCategory extends Controller {
 				
 				$product_total = $this->model_catalog_product->getTotalProducts($data);				
 				
-				if ($result['category_id'] < 72) { 
-					$this->data['listing_regions'][] = array(
-						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
-						'category_id' => $result['category_id']
-					);
-				} else {
-					$this->data['listing_other_categories'][] = array(
-						'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
-						'category_id' => $result['category_id']
+				$this->data['listing_regions'][] = array(
+					'name'  => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $product_total . ')' : ''),
+					'href'  => $this->url->link('product/category', 'path=59_' . $result['category_id'] . $url),
+					'category_id' => $result['category_id']
+				);
+			}
+
 					);
 				
 				}
