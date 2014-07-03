@@ -182,20 +182,46 @@ function addToCompare(product_id) {
 }
 
 function hover_on_map(id) {
-	var v = document.getElementById('region_' + id);
-	v.style.backgroundColor = '#7d1a16';
-	v.style.border = '2px #eade92 solid';
-	var l = document.getElementById('region_label_' + id);
-	l.style.color = '#123e1e';
+	if (id == "62") {
+		var v = document.getElementById('region_69');
+		v.style.backgroundColor = '#7d1a16';
+		v.style.border = '2px #eade92 solid';
+		var v2 = document.getElementById('region_70');
+		v2.style.backgroundColor = '#7d1a16';
+		v2.style.border = '2px #eade92 solid';
+		var l = document.getElementById('region_label_69');
+		l.style.color = '#123e1e';
+		var l2 = document.getElementById('region_label_70');
+		l2.style.color = '#123e1e';
+	} else {
+		var v = document.getElementById('region_' + id);
+		v.style.backgroundColor = '#7d1a16';
+		v.style.border = '2px #eade92 solid';
+		var l = document.getElementById('region_label_' + id);
+		l.style.color = '#123e1e';
+	}
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_piros.png)";
 }
 function mouse_out_map(id) {
-	var v = document.getElementById('region_' + id);
-	v.style.backgroundColor = '#eade92';
-	v.style.border = '2px #123e1e solid';
-	var l = document.getElementById('region_label_' + id);
-	l.style.color = '#123e1e';
+	if (id == "62") {
+		var v = document.getElementById('region_69');
+		v.style.backgroundColor = '#eade92';
+		v.style.border = '2px #123e1e solid';
+		var v2 = document.getElementById('region_70');
+		v2.style.backgroundColor = '#eade92';
+		v2.style.border = '2px #123e1e solid';
+		var l = document.getElementById('region_label_69');
+		l.style.color = '#123e1e';
+		var l2 = document.getElementById('region_label_70');
+		l2.style.color = '#123e1e';
+	} else {
+		var v = document.getElementById('region_' + id);
+		v.style.backgroundColor = '#eade92';
+		v.style.border = '2px #123e1e solid';
+		var l = document.getElementById('region_label_' + id);
+		l.style.color = '#123e1e';
+	}
 	var g = document.getElementById('map_region_' + id);
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
@@ -205,7 +231,11 @@ function hover_on_label(id) {
 	v.style.border = '2px #eade92 solid';
 	var l = document.getElementById('region_label_' + id);
 	l.style.color = '#123e1e';
-	var g = document.getElementById('map_region_' + id);
+	if (id == "69" || id == "70"){
+		var g = document.getElementById('map_region_62');
+	} else {
+		var g = document.getElementById('map_region_' + id);
+	}
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_piros.png)";
 }
 function mouse_out_label(id) {
@@ -214,7 +244,11 @@ function mouse_out_label(id) {
 	v.style.border = '2px #123e1e solid';
 	var l = document.getElementById('region_label_' + id);
 	l.style.color = '#123e1e';
-	var g = document.getElementById('map_region_' + id);
+	if (id == "69" || id == "70"){
+		var g = document.getElementById('map_region_62');
+	} else {
+		var g = document.getElementById('map_region_' + id);
+	}
 	g.style.backgroundImage = "url(catalog/view/theme/default/image/szolofurt_sarga.png)";
 }
 function hover_on_button(id) {
