@@ -18,10 +18,10 @@
   <?php } ?>-->
 	<div class="region_selector_container<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<div class="region_selector_list">
-  		<div style="width:300px;"><h1 style="color: #7d1a16; padding-left: 49px; font-size: 37px; margin: 15px 0 0 0"><?php echo $heading_title; ?></h1></div>
+  		<div style="width:300px;"><h1 style="color: #7d1a16; padding-left: 49px; font-size: 37px; margin: 15px 0 0 0; position: absolute; z-index: 2;"><?php echo $heading_title; ?></h1></div>
 			<?php if ($listing_regions) { ?>
 				<h2 class="hidden"><?php echo $text_refine; ?></h2>
-				<div class="category-list">
+				<div class="category-list" style="margin-top: 70px; position: absolute; z-index: 2;">
 					<ul style="padding-left: 15px; width: 240px;">
 						<?php foreach ($listing_regions as $category) { ?>
 						<?php if ($category['category_id'] != "62") { ?>
