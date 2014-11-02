@@ -288,10 +288,12 @@ function setWidthFaqShadow() {
 }
 
 function hover_on_checkbox(id) {
-	var glass = $("#" + id);
-	glass.css('background-image', 'url(catalog/view/theme/default/image/pohar35.png)');
+//	var glass = $("#" + id);
+//	glass.css('background-image', 'url(catalog/view/theme/default/image/pohar35.png)');
+	$('#' +id).toggleClass('full');
 }
 
 function mouse_out_checkbox(id) {
-	$("#" + id).css('background-image', 'url(catalog/view/theme/default/image/ures_pohar.png)');
+	$('#' +id).toggleClass('full');
+//	$("#" + id).css('background-image', 'url(catalog/view/theme/default/image/ures_pohar.png)');
 }

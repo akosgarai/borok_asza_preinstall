@@ -771,6 +771,10 @@ a img {
 	float: left;
 }
 
+.glass.full {
+	background-image: url('../image/pohar35.png');
+}
+
 .glass_text {
 	padding: 11px 0 0 25px;
 }

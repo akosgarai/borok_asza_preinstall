@@ -263,27 +263,39 @@ class ControllerProductCategory extends Controller {
 			foreach ($results as $result) {
 				$urlParts = explode('&', $url);
 				$newUrlParts = array();
+				$selectedWineColor = 0;
+				$selectedWineSugar = 0;
 
 				if($result['type'] == 1) {
 					foreach($urlParts as $urlPart) {
 						$upArray = explode('=', $urlPart);
 						if ($upArray[0] == 'wc') {
+							$selectedWineColor = $upArray[1];
 							continue;
 						}
 						array_push($newUrlParts, $urlPart);
 					}
 					$urlString = implode('&', $newUrlParts);
-					$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&wc=' . $result['category_param_id']);
+					if ($result['category_param_id'] == $selectedWineColor) {
+						$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString);
+					} else {
+						$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&wc=' . $result['category_param_id']);
+					}
 				} else if ($result['type'] == 2) {
 					foreach($urlParts as $urlPart) {
 						$upArray = explode('=', $urlPart);
 						if ($upArray[0] == 'ws') {
+							$selectedWineSugar = $upArray[1];
 							continue;
 						}
 						array_push($newUrlParts, $urlPart);
 					}
 					$urlString = implode('&', $newUrlParts);
-					$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&ws=' . $result['category_param_id']);
+					if ($result['category_param_id'] == $selectedWineSugar) {
+						$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString);
+					} else {
+						$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&ws=' . $result['category_param_id']);
+					}
 				} else {
 					continue;
 					//$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&ws=' . $result['category_param_id']);
@@ -501,6 +513,8 @@ class ControllerProductCategory extends Controller {
 			$this->data['sort'] = $sort;
 			$this->data['order'] = $order;
 			$this->data['limit'] = $limit;
+			$this->data['wineSugar'] = $this->request->get['ws'];
+			$this->data['wineColor'] = $this->request->get['wc'];
 		
 			$this->data['continue'] = $this->url->link('common/home');
 
