@@ -594,6 +594,7 @@ body {
 	height: 454px;
 	width: 718px;
 	position: relative;
+	z-index: -1;
 }
 .round_button_vertical {
 	background-color: #eade92;
