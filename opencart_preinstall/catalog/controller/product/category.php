@@ -62,6 +62,14 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 									
+			if (isset($this->request->get['wc'])) {
+				$url .= '&wc=' . $this->request->get['wc'];
+			}
+									
+			if (isset($this->request->get['ws'])) {
+				$url .= '&ws=' . $this->request->get['ws'];
+			}
+									
 			$path = '';
 		
 			$parts = explode('_', (string)$this->request->get['path']);
@@ -143,6 +151,15 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 									
+			if (isset($this->request->get['wc'])) {
+				$url .= '&wc=' . $this->request->get['wc'];
+			}
+									
+			if (isset($this->request->get['ws'])) {
+				$url .= '&ws=' . $this->request->get['ws'];
+			}
+									
+									
 			$this->data['breadcrumbs'][] = array(
 				'text'      => $category_info['name'],
 				'href'      => $this->url->link('product/category', 'path=' . $this->request->get['path']),
@@ -176,6 +193,15 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 								
+			if (isset($this->request->get['wc'])) {
+				$url .= '&wc=' . $this->request->get['wc'];
+			}
+									
+			if (isset($this->request->get['ws'])) {
+				$url .= '&ws=' . $this->request->get['ws'];
+			}
+									
+									
 			$this->data['categories'] = array();
 			
 			$results = $this->model_catalog_category->getCategories($category_id);
@@ -232,25 +258,71 @@ class ControllerProductCategory extends Controller {
 				);
 			}
 
-					);
-				
+			$this->data['category_params'] = array();
+			$results = $this->model_catalog_category->getCategoryParams($category_id);
+			foreach ($results as $result) {
+				$urlParts = explode('&', $url);
+				$newUrlParts = array();
+
+				if($result['type'] == 1) {
+					foreach($urlParts as $urlPart) {
+						$upArray = explode('=', $urlPart);
+						if ($upArray[0] == 'wc') {
+							continue;
+						}
+						array_push($newUrlParts, $urlPart);
+					}
+					$urlString = implode('&', $newUrlParts);
+					$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&wc=' . $result['category_param_id']);
+				} else if ($result['type'] == 2) {
+					foreach($urlParts as $urlPart) {
+						$upArray = explode('=', $urlPart);
+						if ($upArray[0] == 'ws') {
+							continue;
+						}
+						array_push($newUrlParts, $urlPart);
+					}
+					$urlString = implode('&', $newUrlParts);
+					$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $urlString . '&ws=' . $result['category_param_id']);
+				} else {
+					continue;
+					//$href = $this->url->link('product/category', 'path=' . $this->request->get['path'] . $url . '&ws=' . $result['category_param_id']);
 				}
+				$this->data['category_params'][] = array(
+					'name'  => $result['name'],
+					'category_param_id' => $result['category_param_id'],
+					'href'  => $href
+				);
 			}
 			
 			$this->data['products'] = array();
 			
+			$wineColor = '';
+			if (isset($this->request->get['wc'])) {
+				$wineColor = $this->request->get['wc'];
+			}
+									
+			$wineSugar = '';
+			if (isset($this->request->get['ws'])) {
+				$wineSugar = $this->request->get['ws'];
+			}
+									
 			$data = array(
 				'filter_category_id' => $category_id,
 				'filter_filter'      => $filter, 
 				'sort'               => $sort,
 				'order'              => $order,
 				'start'              => ($page - 1) * $limit,
-				'limit'              => $limit
+				'limit'              => $limit,
+				'wineColor'              => $wineColor,
+				'wineSugar'              => $wineSugar
 			);
+
 					
 			$product_total = $this->model_catalog_product->getTotalProducts($data); 
 			
 			$results = $this->model_catalog_product->getProducts($data);
+
 			
 			foreach ($results as $result) {
 				if ($result['image']) {
@@ -309,6 +381,10 @@ class ControllerProductCategory extends Controller {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
 										
+			if (isset($this->request->get['ws'])) {
+				$url .= '&ws=' . $this->request->get['ws'];
+			}
+									
 			$this->data['sorts'] = array();
 			
 			$this->data['sorts'][] = array(

@@ -65,6 +65,18 @@ class ControllerProductSearch extends Controller {
 			$limit = $this->config->get('config_catalog_limit');
 		}
 		
+		if (isset($this->request->get['wc'])) {
+			$wineColor = $this->request->get['wc'];
+		} else {
+			$wineColor = '';
+		} 
+
+		if (isset($this->request->get['ws'])) {
+			$wineSugar = $this->request->get['ws'];
+		} else {
+			$wineSugar = '';
+		} 
+		
 		if (isset($this->request->get['search'])) {
 			$this->document->setTitle($this->language->get('heading_title') .  ' - ' . $this->request->get['search']);
 		} else {
@@ -210,7 +222,9 @@ class ControllerProductSearch extends Controller {
 				'sort'                => $sort,
 				'order'               => $order,
 				'start'               => ($page - 1) * $limit,
-				'limit'               => $limit
+				'limit'               => $limit,
+				'wineColor'			=> $wineColor,
+				'wineSugar'               	=> $wineSugar
 			);
 					
 			$product_total = $this->model_catalog_product->getTotalProducts($data);

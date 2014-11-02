@@ -11,6 +11,11 @@ class ModelCatalogCategory extends Model {
 
 		return $query->rows;
 	}
+
+	public function getCategoryParams($category_id = 0) {
+		$query = $this->db->query("SELECT name, id as category_param_id, type FROM " . DB_PREFIX . "category_params");
+		return $query->rows;
+	}
 	
 	public function getCategoryFilters($category_id) {
 		$implode = array();

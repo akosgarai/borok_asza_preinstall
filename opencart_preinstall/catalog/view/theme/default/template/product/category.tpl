@@ -51,11 +51,11 @@
 	</div>
 	<div class="other_categories<?php if ($hide_map == 1) { ?> hidden<?php } ?>">
 		<ul>
-			<?php foreach($listing_other_categories as $category) { ?>
-				<li class="other_categories_list">
-					<a href="<?php echo $category['href']; ?>">
-						<div class="glass"></div>
-						<div class="glass_text"><?php echo $category['name']; ?></div>
+			<?php foreach($category_params as $param) { ?>
+				<li class="other_categories_list" onmouseout="mouse_out_checkbox(<?php echo $param['category_param_id']; ?>);" onmouseover="hover_on_checkbox(<?php echo $param['category_param_id']; ?>)">
+					<a href="<?php echo $param['href']; ?>">
+						<div class="glass" id="<?php echo $param['category_param_id']; ?>" ></div>
+						<div class="glass_text"><?php echo $param['name']; ?></div>
 					</a>
 				</li>
 			<?php } ?>

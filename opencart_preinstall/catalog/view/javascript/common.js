@@ -278,10 +278,20 @@ function showHideMailForm() {
 		form.display = 'block';
 	}
 }
+
 function setWidthFaqShadow() {
 	var shadow = document.getElementById("faq_shadow").style;
 	var shadowHeight = document.defaultView.getComputedStyle(document.getElementById("faq_container"))["height"];
 	var faqbottom = document.getElementById("faq_bottom").style;
 	faqbottom.marginTop = shadowHeight;
 	shadow.height = shadowHeight;
+}
+
+function hover_on_checkbox(id) {
+	var glass = $("#" + id);
+	glass.css('background-image', 'url(catalog/view/theme/default/image/pohar35.png)');
+}
+
+function mouse_out_checkbox(id) {
+	$("#" + id).css('background-image', 'url(catalog/view/theme/default/image/ures_pohar.png)');
 }
