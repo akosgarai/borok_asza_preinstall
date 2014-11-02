@@ -244,7 +244,7 @@ class ControllerCommonHeader extends Controller {
 		if (isset($_COOKIE['aszokbora_admin'])) {
 			$has_right_to_view_this_shit = $_COOKIE['aszokbora_admin'];
 		}
-		if($has_right_to_view_this_shit == 1) {
+		if($has_right_to_view_this_shit == 1 || true) {
 			$this->data['show_login'] = 1;
 		} else {
 			$this->data['show_login'] = 0;
