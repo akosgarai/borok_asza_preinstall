@@ -36,7 +36,7 @@ class ControllerCommonFileManager extends Controller {
 				
 		$this->load->model('tool/image');
 
-		$this->data['no_image'] = $this->model_tool_image->resize('no_image.jpg', 100, 100);
+		$this->data['no_image'] = $this->model_tool_image->resize('no_image.jpg', 300, 300);
 		
 		if (isset($this->request->get['field'])) {
 			$this->data['field'] = $this->request->get['field'];
@@ -59,7 +59,7 @@ class ControllerCommonFileManager extends Controller {
 		$this->load->model('tool/image');
 		
 		if (isset($this->request->get['image'])) {
-			$this->response->setOutput($this->model_tool_image->resize(html_entity_decode($this->request->get['image'], ENT_QUOTES, 'UTF-8'), 100, 100));
+			$this->response->setOutput($this->model_tool_image->resize(html_entity_decode($this->request->get['image'], ENT_QUOTES, 'UTF-8'), 300, 300));
 		}
 	}
 	
@@ -433,7 +433,7 @@ class ControllerCommonFileManager extends Controller {
 					$json['error'] = $this->language->get('error_directory');
 				}
 				
-				if ($this->request->files['image']['size'] > 300000) {
+				if ($this->request->files['image']['size'] > 2300000) {
 					$json['error'] = $this->language->get('error_file_size');
 				}
 				

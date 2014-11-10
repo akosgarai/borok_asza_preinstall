@@ -299,6 +299,8 @@ class ModelCatalogProduct extends Model {
 						
 			$data = array_merge($data, array('product_attribute' => $this->getProductAttributes($product_id)));
 			$data = array_merge($data, array('product_description' => $this->getProductDescriptions($product_id)));			
+			$data = array_merge($data, array('wineSugar' => $this->getProductWineSugar($product_id)));			
+			$data = array_merge($data, array('wineColor' => $this->getProductWineColor($product_id)));			
 			$data = array_merge($data, array('product_discount' => $this->getProductDiscounts($product_id)));
 			$data = array_merge($data, array('product_filter' => $this->getProductFilters($product_id)));
 			$data = array_merge($data, array('product_image' => $this->getProductImages($product_id)));		
