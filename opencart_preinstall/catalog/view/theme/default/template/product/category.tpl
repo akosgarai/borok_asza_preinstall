@@ -101,24 +101,24 @@
 	      <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
 	      <div class="description"><?php echo $product['description']; ?></div>
 	      <?php if ($product['price']) { ?>
-	      <div class="price">
-		<?php if (!$product['special'] && $product['price'] != 0) { ?>
-		<div class="price1">
-		<?php echo $product['price']; ?>
-		</div>
-		<?php } else { ?>
-	       <!-- <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new">--><?php echo $product['special']; ?><!--</span>-->
+		      <div class="price">
+			<?php if (!$product['special'] && $product['price'] != 0) { ?>
+			<div class="price1">
+			<?php echo $product['price']; ?>
+			<?php if ($product['ltrPrice'] && $product['ltrPrice'] != '') { ?>
+				<?php echo " (" . $product['ltrPrice'] . " Ft/l)";?>
+			<?php } ?>
+			</div>
+			<?php } else { ?>
+		       <!-- <span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new">--><?php echo $product['special']; ?><!--</span>-->
 		<?php } ?>
-		<?php if ($product['tax']) { ?>
-	       <!-- <br />
-		<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
-		<?php } ?>
-		<div class="ltrPrice">
-		<?php if ($product['ltrPrice'] && $product['ltrPrice'] != '') { ?>
-			<?php echo $product['ltrPrice'] . " Ft/l";?>
-		<?php } ?>
-		</div>
-	      </div>
+			<?php if ($product['tax']) { ?>
+		       <!-- <br />
+			<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
+			<?php } ?>
+			<div class="ltrPrice">
+			</div>
+		      </div>
 	  </div>
       <?php } ?>
       <?php if ($product['rating']) { ?>

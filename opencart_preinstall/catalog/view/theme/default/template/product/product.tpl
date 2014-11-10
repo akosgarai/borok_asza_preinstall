@@ -234,7 +234,19 @@
       </div>-->
       <div class="product-description">
        <div><h3><?php echo $heading_title; ?></h3></div>
-      	<?php echo $description; ?>
+		<?php echo $description; ?>
+	      <?php if ($price) { ?>
+	      <div class="price">
+		<?php if (!$special && $price != 0) { ?>
+			<div class="price1">
+			<?php echo $price; ?>
+			<?php if ($ltrPrice && $ltrPrice != '') { ?>
+				<?php echo " (" . $ltrPrice . " Ft/l)";?>
+			<?php } ?>
+			</div>
+		<?php } ?>
+	      </div>
+	      <?php } ?>
       </div>
 
       <?php if ($review_status && false) { ?>
