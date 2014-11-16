@@ -3,10 +3,10 @@
 		<div class="footer-link contact" style="margin-left:100px">
 		      <a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a>
 		</div>
-		<div class="facebook-box">
+		<div class="facebook-box" style="display:none">
 			<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="recommend" data-show-faces="false" data-share="false"></div>
 		</div>
-		<div class="gplus-box">
+		<div class="gplus-box" style="display:none">
 			<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 			<g:plusone></g:plusone>
 		</div>

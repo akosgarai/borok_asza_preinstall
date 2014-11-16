@@ -34,11 +34,11 @@
 						<div class="store_open_day">Péntek: </div><div class="open_from">13 - </div><div class="open_to">19</div>
 						<div class="store_open_day">Szombat: </div><div class="open_from">9 - </div><div class="open_to">12</div>
 					</div>
-					<div onclick="showHideMailForm();" style="margin-top: 20px; width: 200px;">
+					<div style="margin-top: 20px; width: 200px;">
 						<div class="round_button" style="float: left; margin-top: 15px; margin-left: 20px"></div>
-						<div id="write-us-text" ><h1 class="cred" style="margin-top: 190px;">Írjon Nekünk</h1></div>
+						<div id="write-us-text" ><h1 class="cred" style="margin-top: 190px;">Megrendelés:</h1></div>
 					</div>
-					<div id="write-us-form" style="display:none;">
+					<div id="write-us-form">
 						<form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
 							<div class="content" style="border: none;">
 								<div>
@@ -65,7 +65,7 @@
 								</div>
 								<div>
 									<b><?php echo $entry_enquiry; ?></b><br />
-									<textarea name="enquiry" cols="40" rows="10" style="resize: none; background-color: #79ba90; color: #123e1e;"><?php echo $enquiry; ?></textarea>
+									<textarea name="enquiry" cols="40" rows="10" style="resize: none; background-color: #79ba90; color: #123e1e;" placeholder="Ide írd meg, hogy mely termékeket szeretnéd megrendelni tőlünk"><?php echo $enquiry; ?></textarea>
 								</div><br />
 								<?php if ($error_enquiry) { ?>
 								<span class="error"><?php echo $error_enquiry; ?></span>
@@ -86,6 +86,7 @@
 					<div class="map-container">
 						<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.6814315778347!2d19.190448999999997!3d47.457149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c3b3099645ef%3A0x8eef6b6457797ef7!2sNimr%C3%B3d+utca+60!5e0!3m2!1shu!2shu!4v1397385769929"></iframe>
 					</div>
+					<?php if ($transporters[0]['transporter_name'] != "") { ?>
 					<div class="content_transporter">
 						<?php foreach ($transporters as $transporter) {?>
 						<table>
@@ -112,15 +113,16 @@
 						</table>
 						<?php } ?>
 					</div>
+					<?php } ?>
 					<div class="travel-info-box">
 						<h1 class="cred">Megközelítés:</h1>
 						<h3>Megközelítés autóval:</h3>
-						<p>Könnyen megközelíthető autóval a főbb közlekedési útvonalakon. Az épület a Könyves Kálmán krt. és a Mester utca találkozásánál fekszik. Az autósokat tágas nyitott parkolóval és garázzsal várjuk.</p>
-						<h3>Megközelítés tömegközlekedéssel:</h3>
-						<p>Metró: A 3-as vonalról 1 átszállással a 103-as buszra vagy az 1-es villamosra
-					Villamos: Az 1-es illetve az 51-es jelzésű villamos a Ház előtt áll meg
-					Busz: A 103-as autóbusz a Ház előtt áll meg
-					HÉV:Elővárosi vasút Csepelről és Ráckevéről. Egy átszállással a 103-as buszra vagy az 1-es villamosra.</p>
+						<p>Belvárosból az Üllői úton, majd a Ferihegyi repülőtérre vezető úton kell végigjönni a Csévéző utcáig.</p>
+							<h3>Megközelítés tömegközlekedéssel:</h3>
+						<p>
+							KÖKI-től 200E-s busszal a Csévéző utca megállóig.<br/>
+							2-es metrótól a 95-os busszal Hangár utcai megállóig, majd az Előd utcát követve a Csaba utcaig kell elgyalogolni(kb 500 meter).
+						</p>
 					</div>
       	</div>
 			</div>
