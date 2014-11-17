@@ -14,6 +14,7 @@
 				<div class="address-box">
 					<h1 class="cred"><?php echo $heading_title; ?>:</h1>
 					<h2 class="cred"><?php echo $text_address; ?></h2>
+        	<span class="contact-text"><?php echo $owner; ?></span><br />
         	<span class="contact-text"><?php echo $store; ?></span><br />
         	<span class="contact-text"><?php echo $address; ?></span><br />
 					<?php if ($telephone) { ?>
