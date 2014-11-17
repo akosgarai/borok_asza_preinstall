@@ -8,6 +8,7 @@
 	border: 4px solid #123e1e;
 	margin-top: 80px;
 	float: right;
+	background-size: 400px;
 }
 
 body {
@@ -478,11 +479,19 @@ body {
 	position: relative;
 	top: 30px;
 }
+.product-description .price1 {
+	float: left;
+	font-weight: bold;
+}
+.product-description .ltrPrice {
+	font-weight: normal;
+}
 .product-list .price1 {
 	float: left;
+	font-weight: bold;
 }
 .product-list .ltrPrice {
-	float: right;
+	font-weight: normal;
 }
 .product-list .price-old {
 	color: #F00;

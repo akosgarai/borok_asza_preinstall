@@ -241,7 +241,7 @@
 			<div class="price1">
 			<?php echo $price; ?>
 			<?php if ($ltrPrice && $ltrPrice != '') { ?>
-				<?php echo " (" . $ltrPrice . " Ft/l)";?>
+				<span class="ltrPrice"><?php echo " (" . $ltrPrice . " Ft/l)";?></span>
 			<?php } ?>
 			</div>
 		<?php } ?>

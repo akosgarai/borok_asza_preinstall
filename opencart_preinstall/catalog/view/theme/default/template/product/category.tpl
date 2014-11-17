@@ -106,7 +106,7 @@
 			<div class="price1">
 			<?php echo $product['price']; ?>
 			<?php if ($product['ltrPrice'] && $product['ltrPrice'] != '') { ?>
-				<?php echo " (" . $product['ltrPrice'] . " Ft/l)";?>
+				<span class="ltrPrice"><?php echo " (" . $product['ltrPrice'] . " Ft/l)";?></span>
 			<?php } ?>
 			</div>
 			<?php } else { ?>
